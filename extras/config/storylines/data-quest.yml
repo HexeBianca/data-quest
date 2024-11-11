@@ -56,7 +56,7 @@ npcs:
               de: "Ich bin Mathematikerin und habe mich auf mathematische Neurowissenschaften spezialisiert. Ich bin Teil dieser coolen, interdisziplinären Zusammenarbeit."
           - text:
               en: "I am responsible for SUPERVISION, CONCEPTUALIZATION, and PROJECT ADMINISTRATION."
-              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."        
+              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."
       - cond: 'quest.credit2.done & ^quest.credit3.done'
         type: sequence
         items:
@@ -65,7 +65,7 @@ npcs:
               de: "Ich bin Mathematikerin und habe mich auf mathematische Neurowissenschaften spezialisiert. Ich bin Teil dieser coolen, interdisziplinären Zusammenarbeit."
           - text:
               en: "I am responsible for SUPERVISION, CONCEPTUALIZATION, and PROJECT ADMINISTRATION."
-              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."          
+              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."
       - cond: 'quest.credit3.done'
         type: sequence
         items:
@@ -74,18 +74,18 @@ npcs:
               de: "Ich bin Mathematikerin und habe mich auf mathematische Neurowissenschaften spezialisiert. Ich bin Teil dieser coolen, interdisziplinären Zusammenarbeit."
           - text:
               en: "I am responsible for SUPERVISION, CONCEPTUALIZATION, and PROJECT ADMINISTRATION."
-              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."    
+              de: "Ich bin für SUPERVISION, KONZEPTUALISIERUNG und PROJEKTVERWALTUNG zuständig."
           - text:
               en: "My PhD student Maxi is currently focusing on her role of WRITING—ORIGINAL DRAFT, while I will be responsible for WRITING—REVIEW&EDITING later."
-              de: "Meine Doktorandin Maxi konzentriert sich derzeit auf das SCHREIBEN DES ORIGINALENTWURFS, während ich später für das SCHREIBEN - ÜBERPRÜFUNG und ÜBERARBEITUNG zuständig sein werde."   
+              de: "Meine Doktorandin Maxi konzentriert sich derzeit auf das SCHREIBEN DES ORIGINALENTWURFS, während ich später für das SCHREIBEN - ÜBERPRÜFUNG und ÜBERARBEITUNG zuständig sein werde."
       - text:
           en: "I am a mathematician specializing in mathematical neuroscience."
-          de: "Ich bin Mathematikerin und habe mich auf mathematische Neurowissenschaften spezialisiert."              
+          de: "Ich bin Mathematikerin und habe mich auf mathematische Neurowissenschaften spezialisiert."
   videoBlogger:
     name:
       en: Dusty Grant
       de: Dusty Grant
-    spawn: { x: 2458, y: 1255 }
+    spawn: { x: 2158, y: 1255 }
     dialogue:
       - text:
           en: "We sailed for a while with MaRDI's math and data pioneers! Check out the Data Date video interviews in the MaRDI newsletter!"
@@ -254,7 +254,7 @@ npcs:
       de: Mike Backmill
     type: citizenDough
     spawn: { x: 4824, y: 3274 }
-    cond: '^(quest.credit1.done & (^quest.credit1.active | quest.credit1.local))'    
+    cond: '^(quest.credit1.done & (^quest.credit1.active | quest.credit1.local))'
     dialogue:
       - text:
           en: "I am a biologist and participate in the conference. I will give a talk on cognitive neuroscience."
@@ -263,7 +263,7 @@ npcs:
     name:
       en: "Emmy"
     spawn: { x: 4955, y: 3274 }
-    cond: '^(quest.credit1.done & (^quest.credit1.active | quest.credit1.local))'       
+    cond: '^(quest.credit1.done & (^quest.credit1.active | quest.credit1.local))'
     dialogue:
       - text:
           en: "Woof!"
@@ -274,7 +274,7 @@ npcs:
       de: Mike Backmill
     type: citizenDough
     spawn: { x: 3160, y: 1200 }
-    cond: 'quest.credit1.done'    
+    cond: 'quest.credit1.done'
     dialogue:
       - type: sequence
         items:
@@ -289,7 +289,7 @@ npcs:
       en: "Emmy"
     type: dogTan
     spawn: { x: 3260, y: 1150 }
-    cond: 'quest.credit1.done'        
+    cond: 'quest.credit1.done'
     dialogue:
       - text:
           en: "Woof!"
@@ -324,8 +324,8 @@ npcs:
       en: "Jane Allgood"
       de: "Jane Allgood"
     type: citizenTennis
-    spawn: { x: 4029, y: 2430 }   
-    cond: '^(quest.credit2.done & (^quest.credit2.active | quest.credit2.local))'   
+    spawn: { x: 4029, y: 2430 }
+    cond: '^(quest.credit2.done & (^quest.credit2.active | quest.credit2.local))'
     dialogue:
       - text:
           en: "I am a biologist. I love animals and yoga."
@@ -336,7 +336,7 @@ npcs:
       de: "Jane Allgood"
     type: citizenTennis
     spawn: { x: 3260, y: 1300 }
-    cond: 'quest.credit2.done' 
+    cond: 'quest.credit2.done'
     dialogue:
       - type: sequence
         items:
@@ -351,7 +351,7 @@ npcs:
       en: "Jo Marshal"
       de: "Jo Marshal"
     type: citizenLila
-    spawn: { x: 4100, y: 2460 }  
+    spawn: { x: 4100, y: 2460 }
     dialogue:
       - type: random
         items:
@@ -381,11 +381,11 @@ npcs:
               de: "Ich bin Yogalehrerin. Der Goldene Schnitt, ein Konzept aus der Mathematik, findet auch in der Welt des Yoga seine Entsprechung."
   citizenComp:
     name:
-      en: Franciszek Snowpinski 
-      de: Franciszek Snowpinski 
+      en: Franciszek Snowpinski
+      de: Franciszek Snowpinski
     type: citizenChamp
     spawn: { x: 3990, y: 3700 }
-    cond: '^(quest.credit3.done & (^quest.credit3.active | quest.credit3.local))'   
+    cond: '^(quest.credit3.done & (^quest.credit3.active | quest.credit3.local))'
     dialogue:
       - text:
           en: "Hi. I do computational combinatorics. I also like soccer."
@@ -396,13 +396,13 @@ npcs:
       de: "Franciszek Snowpinski"
     type: citizenChamp
     spawn: { x: 3410, y: 1220 }
-    cond: 'quest.credit3.done' 
+    cond: 'quest.credit3.done'
     dialogue:
       - type: sequence
         items:
           - text:
               en: "I collaborate on this cool, interdisciplinary project on neuroscience."
-              de: "Ich arbeite an diesem coolen, interdisziplinären Projekt über Neurowissenschaften mit." 
+              de: "Ich arbeite an diesem coolen, interdisziplinären Projekt über Neurowissenschaften mit."
           - text:
               en: "I do computational combinatorics. In this project, I am responsible for SOFTWARE and FUNDING ACQUISITION."
               de: "Ich beschäftige mich mit numerischer Kombinatorik. In diesem Projekt bin ich für SOFTWARE und die AKQUISE VON FINANZMITTELN zuständig."
@@ -458,12 +458,14 @@ npcs:
               de: "Ich :love: Mathe!"
           - text:
               en: "Your math is data!"
-              de: "Deine Mathematik sind Daten!"           
+              de: "Deine Mathematik sind Daten!"
 scenery:
+  sculpture:
+    spawn: { x: 2703, y: 1322 }
   ringlight:
-    spawn: { x: 2394, y: 1305 }
+    spawn: { x: 2094, y: 1305 }
   camera:
-    spawn: { x: 2535, y: 1313 }
+    spawn: { x: 2235, y: 1313 }
   tree1:
     spawn: { x: 2880, y: 1829 }
   tree2:
@@ -536,7 +538,7 @@ quests:
           citizenAqua:
             - text:
                 en: "Mike Backmill might be walking his dog. Try to find him."
-                de: "Mike Backmill geht vielleicht gerade mit seinem Hund spazieren. Versuche, ihn zu finden."                
+                de: "Mike Backmill geht vielleicht gerade mit seinem Hund spazieren. Versuche, ihn zu finden."
           gameDev:
             - type: sequence
               items:
@@ -549,7 +551,7 @@ quests:
                 - text:
                     en: "I can also help with CONCEPTUALIZATION and INVESTIGATION. I will join the team at the Penrose triangle statue. Come by any time to chat."
                     de: "Ich kann auch bei der KONZEPTUALISIERUNG und UNTERSUCHUNG helfen. Ich werde mich dem Team beim Penrose-Dreieck-Denkmal anschließen. Komm mal vorbei, um zu quatschen."
-                  set: [ 'quest.credit1.done', 'pnt.freedomSmall.credit1', 'quest.credit1.local' ]    
+                  set: [ 'quest.credit1.done', 'pnt.freedomSmall.credit1', 'quest.credit1.local' ]
       - cond: '^found.credit1.flora'
         prompt:
           en: "Ask Flora about the researcher she met yesterday."
@@ -572,7 +574,7 @@ quests:
                 - text:
                     en: "Mike brought his dog to the conference. So look out for the dog to find Mike."
                     de: "Mike hat seinen Hund zur Konferenz mitgebracht. Daran kannst du ihn erkennen."
-                  set: [ 'found.credit1.flora' ]                        
+                  set: [ 'found.credit1.flora' ]
   credit2:
     npc: gameDev2
     mood: interrogation
@@ -603,7 +605,7 @@ quests:
                     de: "Vorerst ablehnen"
                   thenText:
                     en: "OK. I hope you reconsider."
-                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."  
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
     stages:
       - prompt:
           en: "Ask Jane to collaborate on the project."
@@ -625,7 +627,7 @@ quests:
                 - text:
                     en: "But yes, I would love to collaborate on this project. Thank you for inviting me. I will join the team at the Triangle Statue."
                     de: "Aber ja, ich würde gerne an diesem Projekt mitarbeiten. Vielen Dank für die Einladung. Ich werde dem Team beim Dreiecksdenkmal beitreten."
-                  set: [ 'quest.credit2.done', 'pnt.freedomSmall.credit2', 'quest.credit2.local' ]    
+                  set: [ 'quest.credit2.done', 'pnt.freedomSmall.credit2', 'quest.credit2.local' ]
   credit3:
     npc: citizenAqua
     mood: interrogation
@@ -656,7 +658,7 @@ quests:
                     de: "Vorerst ablehnen"
                   thenText:
                     en: "OK. I hope you reconsider."
-                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."  
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
     stages:
       - prompt:
           en: "Ask Franciszek to collaborate on the project."
@@ -678,7 +680,7 @@ quests:
                 - text:
                     en: "Someone else will need to be responsible for WRITING - ORIGINAL DRAFT and VISUALIZATION, though. Thank you for inviting me to this collaboration. I will join the team at the statue."
                     de: "Das SCHREIBEN DES ORIGINALENTWURFS und die VISUALISIERUNG muss jemand anderes übernehmen. Danke, dass du mich zu dem Projekt eingeladen hast. Ich werde dem Team beim Denkmal beitreten."
-                  set: [ 'quest.credit3.done', 'pnt.freedomSmall.credit3', 'quest.credit3.local' ]      
+                  set: [ 'quest.credit3.done', 'pnt.freedomSmall.credit3', 'quest.credit3.local' ]
   mardiF:
     npc: statistician
     mood: interrogation
@@ -725,7 +727,7 @@ quests:
               - text:
                   en: "I will read it and see if I can use it for my work. However, I am pretty sure I will also need Dr. Quartz's code."
                   de: "Ich werde es lesen und sehen, ob ich es für meine Arbeit verwenden kann. Ich bin mir jedoch ziemlich sicher, dass ich auch den Code von Dr. Quartz brauchen werde."
-                set: [ 'quest.mardiF.done' , 'pnt.freedomSmall.mardiF' ]  
+                set: [ 'quest.mardiF.done' , 'pnt.freedomSmall.mardiF' ]
           lawyer:
             - text:
                 en: "Tell Dr. Gaudi about my paper. It is available online. Maybe she doesn't need the code?"
@@ -741,7 +743,7 @@ quests:
           librarian:
             - text:
                 en: "I :love: the Black Forest, especially in carnival season!"
-                de: "Ich :love: den Schwarzwald, besonders in der Faschingszeit!"              
+                de: "Ich :love: den Schwarzwald, besonders in der Faschingszeit!"
       - cond: '^found.mardiF.person'
         prompt:
           en: "Find the work by Dr. Quartz from the Al-Jabr Institute."
@@ -855,7 +857,7 @@ quests:
                   thenText:
                     en: "OK. I hope you reconsider."
                     de: "Ok. Ich hoffe, du überlegst es dir nochmal."
-    stages: 
+    stages:
       - cond: 'found.mardiF.quartz'
         prompt:
           en: "Ask the MaRDI help desk for the best way to share code."
@@ -878,7 +880,7 @@ quests:
                       thenText:
                         en: "If you are able to find a discipline-specific repository for your research data, this will be the best option for you."
                         de: "Wenn du ein disziplinspezifisches Repository für deine Forschungsdaten finden kannst, ist das die beste Option für dich."
-                  set: [ 'quest.mardiA.done' , 'pnt.freedomSmall.mardiA' ]  
+                  set: [ 'quest.mardiA.done' , 'pnt.freedomSmall.mardiA' ]
           mayor:
             - text:
                 en: "Ah, I know Muhammad, I just talked to him during the coffee break."
@@ -933,7 +935,7 @@ quests:
                       thenText:
                         en: "I will do that."
                         de: "Das werde ich tun."
-                      set: [ 'quest.mardiA.done' , 'pnt.freedomSmall.mardiA' ]    
+                      set: [ 'quest.mardiA.done' , 'pnt.freedomSmall.mardiA' ]
                   set: [ 'found.mardiF.quartz' ]
           mayor:
             - text:
@@ -954,7 +956,7 @@ quests:
           mardiHelpDesk:
             - text:
                 en: "MaRDI includes several task areas, such as computer algebra, scientific computing, statistics, and machine learning, as well as cooperation with other disciplines."
-                de: "MaRDI umfasst mehrere sogenannte Task Areas, wie Computeralgebra, wissenschaftliches Rechnen, Statistik und maschinelles Lernen sowie die Zusammenarbeit mit anderen Disziplinen."     
+                de: "MaRDI umfasst mehrere sogenannte Task Areas, wie Computeralgebra, wissenschaftliches Rechnen, Statistik und maschinelles Lernen sowie die Zusammenarbeit mit anderen Disziplinen."
   mardiI:
     npc: journalist
     mood: interrogation
@@ -989,7 +991,7 @@ quests:
       - cond: 'found.mardiI.translation'
         prompt:
           en: "Go back to the journalist to solve his interoperability problem."
-          de: "Gehe zurück zum Journalisten, um sein Verknüpfbarkeitsproblem zu lösen."       
+          de: "Gehe zurück zum Journalisten, um sein Verknüpfbarkeitsproblem zu lösen."
         target: journalist
         dialogues:
           journalist:
@@ -1001,7 +1003,7 @@ quests:
                 - text:
                     en: "My life would be so much easier if everything were designed interoperably."
                     de: "Mein Leben wäre so viel einfacher, wenn alles interoperabel, verknüpfbar und kompatibel gestaltet wäre."
-                  set: [ 'quest.mardiI.done' , 'pnt.freedomSmall.mardiI']  
+                  set: [ 'quest.mardiI.done' , 'pnt.freedomSmall.mardiI']
       - cond: '^found.mardiI.translation'
         prompt:
           en: "Find a way to translate the secret Klingon data."
@@ -1026,17 +1028,17 @@ quests:
                 de: "Du kannst die Leute auf dem Schiff fragen, das gerade im Stadthafen angelegt hat. Sie verknüpfen alle möglichen Sprachen."
           videoBlogger:
             - type: sequence
-              items:          
+              items:
                 - text:
                     en: "I have a nerdy friend who produces videos in the Klingon language. I can send him a copy of the text you have."
                     de: "Ich habe einen nerdigen Freund, der Videos in klingonischer Sprache produziert. Ich kann ihm eine Kopie des Textes schicken."
                 - text:
                     en: ":clock: 3 minutes later…"
-                    de: ":clock: 3 Minuten später..."                
+                    de: ":clock: 3 Minuten später..."
                 - text:
                     en: "He is happy to prepare a translation. The journalist can pick it up at his studio."
-                    de: "Er ist gerne bereit, eine Übersetzung anzufertigen. Der Journalist kann sie in seinem Studio abholen."   
-                  set: [ 'found.mardiI.translation' ]                             
+                    de: "Er ist gerne bereit, eine Übersetzung anzufertigen. Der Journalist kann sie in seinem Studio abholen."
+                  set: [ 'found.mardiI.translation' ]
           librarian:
             - type: sequence
               items:
@@ -1049,23 +1051,23 @@ quests:
           journalist:
             - text:
                 en: "Thank you for trying to help me. Let me know, if you find a solution."
-                de: "Danke, dass du versucht hast, mir zu helfen. Lass mich wissen, wenn du eine Lösung gefunden hast."  
+                de: "Danke, dass du versucht hast, mir zu helfen. Lass mich wissen, wenn du eine Lösung gefunden hast."
           barista:
             - text:
                 en: "I think I saw a video of people speaking Klingon. You could ask the video blogger about it."
-                de: "Ich glaube, ich habe ein Video gesehen, in dem Leute Klingonisch sprechen. Du könntest den Video-Blogger danach fragen." 
+                de: "Ich glaube, ich habe ein Video gesehen, in dem Leute Klingonisch sprechen. Du könntest den Video-Blogger danach fragen."
           artist:
             - text:
                 en: "I would love to go to the planet Epsilon Sagittarii B, but flights are expensive."
-                de: "Ich würde gerne auf den Planeten Epsilon Sagittarii B reisen, aber die Flüge sind teuer." 
+                de: "Ich würde gerne auf den Planeten Epsilon Sagittarii B reisen, aber die Flüge sind teuer."
           citizenAqua:
             - text:
                 en: "Why don’t we all speak Esperanto?"
-                de: "Warum sprechen wir nicht alle Esperanto?" 
+                de: "Warum sprechen wir nicht alle Esperanto?"
           lawyer:
             - text:
                 en: "You could ask the robot for help. He is an expert on interoperability."
-                de: "Du könntest den Roboter um Hilfe bitten. Er ist ein Experte für Verknüpfbarkeit." 
+                de: "Du könntest den Roboter um Hilfe bitten. Er ist ein Experte für Verknüpfbarkeit."
           robot:
             - type: sequence
               items:
@@ -1164,7 +1166,7 @@ quests:
                     de: "Vorerst ablehnen"
                   thenText:
                     en: "OK. I hope you reconsider."
-                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."  
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
     stages:
       - prompt:
           en: "Ask for support at the MaRDI Help Desk."
@@ -1205,7 +1207,7 @@ quests:
                 - text:
                     en: "This is structured information that an automated system can retrieve. You can access it through the MaRDI portal."
                     de: "Dies sind strukturierte Informationen, die ein automatisiertes System abrufen kann. Du kannst sie über das MaRDI-Portal abrufen."
-                  then: optionGo  
+                  then: optionGo
             - id: optionGo
               type: sequence
               items:
@@ -1218,7 +1220,7 @@ quests:
                 - text:
                     en: "It seems that there are a few algorithms that could be helpful for your friend, the engineer. Here is a list of authors."
                     de: "Es scheint, dass es ein paar Algorithmen gibt, die für deinen Freund, den Ingenieur, hilfreich sein könnten. Hier ist eine Liste der Autor*innen."
-                  set: [ 'quest.kgraph1.done', 'pnt.freedomSmall.kgraph1' ]  
+                  set: [ 'quest.kgraph1.done', 'pnt.freedomSmall.kgraph1' ]
   kgraph2:
     npc: engineer
     mood: interrogation
@@ -1254,7 +1256,7 @@ quests:
                 - text:
                     en: "This is structured information that an automated system can retrieve. You can access it through the MaRDI portal."
                     de: "Dies sind strukturierte Informationen, die ein automatisiertes System auslesen kann. Du kannst sie über das MaRDI-Portal abrufen."
-                  then: optionGo  
+                  then: optionGo
             - id: optionGo
               type: sequence
               items:
@@ -1350,7 +1352,7 @@ quests:
                 - text:
                     en: "The user - in this case, your friend, the engineer - does not need to be worried about dealing with some language he doesn’t know."
                     de: "Die Benutzenden - in diesem Fall dein Freund, der Ingenieur - brauchen sich keine Sorgen zu machen, dass sie es mit einer Sprache zu tun haben, die sie nicht kennen."
-                  then: optionDone  
+                  then: optionDone
             - id: optionDone
               type: sequence
               items:
@@ -1431,7 +1433,7 @@ quests:
                 en: "Your work exists in the past, you exist in the present, and your shared data exists in the future."
                 de: "Deine Arbeit existiert in der Vergangenheit, du existierst in der Gegenwart und deine geteilten Daten existieren in der Zukunft."
           lawyer:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.lawyer' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.lawyer'
               type: sequence
               items:
                 - text:
@@ -1447,12 +1449,12 @@ quests:
                 en: "Yes, it is a good thing to share your research data. You can use your own data after several years, even if your hard drive broke."
                 de: "Ja, es ist gut, Forschungsdaten zu teilen. Du kannst deine eigenen Daten auch nach mehreren Jahren noch verwenden, selbst wenn deine Festplatte kaputt gegangen ist."
               set: [ 'op.share.lawyer' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.lawyer' 
+            - cond: 'COUNT("op.share") = 1 & op.share.lawyer'
               text:
                 en: "You have already talked to me. Have you been to the MaRDI ship yet?"
                 de: "Du hast schon mit mir gesprochen. Warst du schon auf dem MaRDI-Schiff?"
           citizenAqua:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenAqua' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenAqua'
               type: sequence
               items:
                 - text:
@@ -1468,12 +1470,12 @@ quests:
                 en: "The coolest thing to do with your research data will be thought of by someone else. So, it is great to share your data."
                 de: "Das Coolste, was mit deinen Forschungsdaten gemacht werden kann, wird wahrscheinlich jemand anderes entdecken. Deshalb ist es großartig, deine Daten zu teilen."
               set: [ 'op.share.citizenAqua' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.citizenAqua' 
+            - cond: 'COUNT("op.share") = 1 & op.share.citizenAqua'
               text:
                 en: "You have already talked to me. Have you been to the MaRDI ship, yet?"
                 de: "Du hast schon mit mir gesprochen. Warst du schon auf dem MaRDI-Schiff?"
           citizenComp:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenComp' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenComp'
               type: sequence
               items:
                 - text:
@@ -1489,12 +1491,12 @@ quests:
                 en: "Sometimes, it is a requirement from the funder to share your research data."
                 de: "Manchmal verlangt der Geldgeber, dass du deine Forschungsdaten teilst."
               set: [ 'op.share.citizenComp' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.Comp' 
+            - cond: 'COUNT("op.share") = 1 & op.share.Comp'
               text:
                 en: "You have already talked to me. Have you been to the MaRDI ship, yet?"
                 de: "Du hast schon mit mir gesprochen. Warst du schon auf dem MaRDI-Schiff?"
           citizenComp2:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenComp' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.citizenComp'
               type: sequence
               items:
                 - text:
@@ -1510,12 +1512,12 @@ quests:
                 en: "Sometimes, it is a requirement from the funder to share your research data."
                 de: "Manchmal verlangt der Geldgeber, dass du deine Forschungsdaten teilst."
               set: [ 'op.share.citizenComp' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.Comp' 
+            - cond: 'COUNT("op.share") = 1 & op.share.Comp'
               text:
                 en: "You have already talked to me. Have you been to the MaRDI ship yet?"
                 de: "Du hast schon mit mir gesprochen. Warst du schon auf dem MaRDI-Schiff?"
           AlgoDB:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.AlgoDB' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.AlgoDB'
               type: sequence
               items:
                 - text:
@@ -1531,12 +1533,12 @@ quests:
                 en: "Sharing your research data allows independent verification of your results."
                 de: "Die Bereitstellung deiner Forschungsdaten ermöglicht eine unabhängige Überprüfung deiner Ergebnisse."
               set: [ 'op.share.AlgoDB' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.AlgoDB' 
+            - cond: 'COUNT("op.share") = 1 & op.share.AlgoDB'
               text:
                 en: "You have already talked to me. Have you been to the MaRDI ship yet?"
                 de: "Du hast schon mit mir gesprochen. Warst du schon auf dem MaRDI-Schiff?"
           mardiMathematician:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.math' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.math'
               type: sequence
               items:
                 - text:
@@ -1552,12 +1554,12 @@ quests:
                 en: "Sharing your research data can improve your reputation as a researcher. Others might cite it in their own research, which will help increase your impact within and beyond your field."
                 de: "Die Bereitstellung deiner Forschungsdaten kann deinen Bekanntheitsgrad in der Wissenschaft erhöhen. Andere können deine Arbeit in ihrer eigenen Forschung zitieren. Das erhöht deinen Impact."
               set: [ 'op.share.math' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.math' 
+            - cond: 'COUNT("op.share") = 1 & op.share.math'
               text:
                 en: "You have already talked to me."
                 de: "Du hast schon mit mir gesprochen."
           mardiHelpDesk:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.help' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.help'
               type: sequence
               items:
                 - text:
@@ -1573,12 +1575,12 @@ quests:
                 en: "Data sharing encourages more connection and collaboration between researchers, which can result in significant new findings within the field."
                 de: "Die gemeinsame Nutzung von Daten fördert die Verbindung und Zusammenarbeit zwischen Forschenden, was zu bedeutenden neuen Erkenntnissen auf dem Forschungsgebiet führen kann."
               set: [ 'op.share.help' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.help' 
+            - cond: 'COUNT("op.share") = 1 & op.share.help'
               text:
                 en: "You have already talked to me."
                 de: "Du hast schon mit mir gesprochen."
           statistician:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.statistician' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.statistician'
               type: sequence
               items:
                 - text:
@@ -1594,12 +1596,12 @@ quests:
                 en: "Data sharing allows researchers to build upon the work of others rather than repeating already existing research. It also enables researchers to perform meta-analyses on the current research topic."
                 de: "Die gemeinsame Nutzung von Daten ermöglicht es, auf der Arbeit anderer aufzubauen, anstatt bereits bestehende Forschungsarbeiten zu wiederholen. Es ermöglicht auch Meta-Analysen zum aktuellen Forschungsthema."
               set: [ 'op.share.statistician' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.statistician' 
+            - cond: 'COUNT("op.share") = 1 & op.share.statistician'
               text:
                 en: "You have already talked to me."
                 de: "Du hast schon mit mir gesprochen."
           librarian:
-            - cond: 'COUNT("op.share") = 1 & ^op.share.librarian' 
+            - cond: 'COUNT("op.share") = 1 & ^op.share.librarian'
               type: sequence
               items:
                 - text:
@@ -1615,7 +1617,7 @@ quests:
                 en: "Sharing data increases data circulation and use within the scientific community by encouraging better transparency, enabling reproducibility of results, and informing the larger scientific community."
                 de: "Die gemeinsame Nutzung von Daten erhöht deren Verbreitung und Verwendung. Sie födert Transparenz, ermöglicht die Reproduzierbarkeit von Ergebnissen und informiert eine breitere wissenschaftliche Gemeinschaft."
               set: [ 'op.share.librarian' ]
-            - cond: 'COUNT("op.share") = 1 & op.share.librarian' 
+            - cond: 'COUNT("op.share") = 1 & op.share.librarian'
               text:
                 en: "You have already talked to me."
                 de: "Du hast schon mit mir gesprochen."
@@ -1672,7 +1674,7 @@ quests:
                     en: "I collaborated with Flora, Jane, Mike, and Franciszek. You will find all of them near the triangle statue."
                     de: "Ich habe mit Flora, Jane, Mike und Franciszek zusammengearbeitet. Du findest sie alle in der Nähe des Dreieck-Denkmals."
           citizenAqua:
-            - cond: 'COUNT("op.favor") = 3 & ^op.favor.citizenAqua' 
+            - cond: 'COUNT("op.favor") = 3 & ^op.favor.citizenAqua'
               type: sequence
               items:
                 - text:
@@ -1680,10 +1682,10 @@ quests:
                     de: "Wir müssen eine angesehene Zeitschrift für die Veröffentlichung finden, vorzugsweise mit einem hohen Impact Factor."
                 - text:
                     en: "However, it is also important to respect the FAIR principles and promote ethical practices in the community. If you are unsure about the FAIR principles, the MaRDI Help Desk at the harbor can explain them to you."
-                    de: "Es ist auch wichtig, die FAIR-Grundsätze zu respektieren und ethische Praktiken in der Forschungsgemeinschaft zu fördern. Wenn du Fragen zu den FAIR-Grundsätzen hast, kann dir der MaRDI-Helpdesk weiterhelfen."      
+                    de: "Es ist auch wichtig, die FAIR-Grundsätze zu respektieren und ethische Praktiken in der Forschungsgemeinschaft zu fördern. Wenn du Fragen zu den FAIR-Grundsätzen hast, kann dir der MaRDI-Helpdesk weiterhelfen."
                 - text:
                     en: "Is it ethical to pay for publication, to pay in exchange for Open Access, or to ask experts to be unpaid referees? These are important debates within the community, and MaRDI promotes them."
-                    de: "Ist es ethisch vertretbar, für eine Veröffentlichung zu bezahlen, und im Gegenzug für Open Access? Was ist mit unbezahlten Fachgutachten? Das sind wichtige Debatten, die MaRDI unterstützt."              
+                    de: "Ist es ethisch vertretbar, für eine Veröffentlichung zu bezahlen, und im Gegenzug für Open Access? Was ist mit unbezahlten Fachgutachten? Das sind wichtige Debatten, die MaRDI unterstützt."
                   set: [ 'op.favor.citizenAqua' ]
                 - text:
                     en: "Thank you for collecting information about the individual licenses. Licenses and legal issues may be troublesome. For advice, ask your local data steward or the MaRDI Help Desk."
@@ -1697,13 +1699,13 @@ quests:
                     de: "Wir müssen eine angesehene Zeitschrift für die Veröffentlichung finden, vorzugsweise mit einem hohen Impact Factor."
                 - text:
                     en: "However, it is also important to respect the FAIR principles and promote ethical practices in the community. If you are unsure about the FAIR principles, the MaRDI Help Desk at the harbor can explain them to you."
-                    de: "Es ist auch wichtig, die FAIR-Grundsätze zu respektieren und ethische Praktiken in der Forschungsgemeinschaft zu fördern. Wenn du Fragen zu den FAIR-Grundsätzen hast, kann dir der MaRDI-Helpdesk weiterhelfen."      
+                    de: "Es ist auch wichtig, die FAIR-Grundsätze zu respektieren und ethische Praktiken in der Forschungsgemeinschaft zu fördern. Wenn du Fragen zu den FAIR-Grundsätzen hast, kann dir der MaRDI-Helpdesk weiterhelfen."
                 - text:
                     en: "Is it ethical to pay for publication, to pay in exchange for Open Access, or to ask experts to be unpaid referees? These are important debates within the community, and MaRDI promotes them."
-                    de: "Ist es ethisch vertretbar, für eine Veröffentlichung zu bezahlen, und im Gegenzug für Open Access? Was ist mit unbezahlten Fachgutachten? Das sind wichtige Debatten, die MaRDI unterstützt."              
+                    de: "Ist es ethisch vertretbar, für eine Veröffentlichung zu bezahlen, und im Gegenzug für Open Access? Was ist mit unbezahlten Fachgutachten? Das sind wichtige Debatten, die MaRDI unterstützt."
                   set: [ 'op.favor.citizenAqua' ]
           citizenComp2:
-            - cond: 'COUNT("op.favor") = 3 & ^op.favor.citizenComp2' 
+            - cond: 'COUNT("op.favor") = 3 & ^op.favor.citizenComp2'
               type: sequence
               items:
                 - text:
@@ -1728,7 +1730,7 @@ quests:
                     de: "Für Software ist es besser, eine softwarespezifische Lizenz wie MIT, Apache, BSD oder GPL zu verwenden anstatt einer inhaltsspezifischen Lizenz wie Creative Commons."
                   set: [ 'op.favor.citizenComp2' ]
           gameDev2:
-            - cond: 'COUNT("op.favor") = 3 & ^op.favor.gameDev2' 
+            - cond: 'COUNT("op.favor") = 3 & ^op.favor.gameDev2'
               type: sequence
               items:
                 - text:
@@ -1747,7 +1749,7 @@ quests:
                     de: "Wir werden unseren Artikel mit den Datenbanken, Modellen und der Software auf Zenodo zur Verfügung stellen und dann in einer Zeitschrift mit Peer-Review veröffentlichen, die auch mit Open Access kompatibel ist."
                   set: [ 'op.favor.gameDev2' ]
           citizenYoga2:
-            - cond: 'COUNT("op.favor") = 3 & ^op.favor.yoga' 
+            - cond: 'COUNT("op.favor") = 3 & ^op.favor.yoga'
               type: sequence
               items:
                 - text:
@@ -1786,7 +1788,7 @@ quests:
           items:
             - text:
                 en: "I am a topologist, and I do mathematics in the 'traditional' way: I read articles and books, discuss with collaborators, think about a problem... And eventually, I write and publish papers. I use no data!"
-                de: "Ich bin Topologin und betreibe Mathematik auf 'traditionelle' Weise: Ich lese Artikel und Bücher, diskutiere mit Kolleg*innen, denke nach... Und schließlich schreibe und veröffentliche ich Artikel. Ich verwende keine Daten!" 
+                de: "Ich bin Topologin und betreibe Mathematik auf 'traditionelle' Weise: Ich lese Artikel und Bücher, diskutiere mit Kolleg*innen, denke nach... Und schließlich schreibe und veröffentliche ich Artikel. Ich verwende keine Daten!"
             - text:
                 en: "However, I've heard a lot about this new research data culture and the MaRDI project. I believe MaRDI is about building infrastructure to manage big databases and code projects."
                 de: "Ich habe jedoch viel über diese neue Forschungsdatenkultur und das MaRDI-Projekt gehört. Ich glaube, bei MaRDI geht es um den Aufbau einer Infrastruktur zur Verwaltung großer Datenbanken und Software-Projekte."
@@ -1850,7 +1852,7 @@ quests:
                 - text:
                     en: "Building a federated knowledge base, defining standards for information exchange, or discussing licenses and publication models are three very different topics that all fall into MaRDI's scope."
                     de: "Der Aufbau einer Wissensbasis, die Definition von Standards oder die Diskussion über Lizenzen und Publikationsmodelle sind drei sehr unterschiedliche Themen, die alle in den Aufgabenbereich von MaRDI fallen."
-                  then: optionDone  
+                  then: optionDone
             - id: optionDone
               type: sequence
               items:
@@ -1888,7 +1890,7 @@ quests:
                 - text:
                     en: "Building a federated knowledge base, defining standards for information exchange, or discussing licenses and publication models are three very different topics that all fall into MaRDI's scope, for example."
                     de: "Der Aufbau einer Wissensbasis, die Definition von Standards oder die Diskussion über Lizenzen und Publikationsmodelle sind drei sehr unterschiedliche Themen, die alle in den Aufgabenbereich von MaRDI fallen."
-                  then: optionDone  
+                  then: optionDone
             - id: optionDone
               type: sequence
               items:
@@ -1905,7 +1907,7 @@ quests:
           items:
             - text:
                 en: "I am a topologist, and I am working on a paper that proves a classification result about all manifolds of dimension 6 that satisfy my favorite set of properties."
-                de: "Ich bin Topologin und arbeite an einer Publikation, die ein Klassifizierungsergebnis für alle Mannigfaltigkeiten der Dimension 6 beweist, die meine Lieblingseigenschaften erfüllen." 
+                de: "Ich bin Topologin und arbeite an einer Publikation, die ein Klassifizierungsergebnis für alle Mannigfaltigkeiten der Dimension 6 beweist, die meine Lieblingseigenschaften erfüllen."
             - text:
                 en: "I just learned about this new Research Data culture and the MaRDI project. Should I consider research data structures when writing my papers?"
                 de: "Ich habe gerade von dieser neuen Forschungsdatenkultur und dem MaRDI-Projekt erfahren. Sollte ich beim Schreiben meiner Arbeiten Forschungsdaten-Strukturen berücksichtigen?"
@@ -1975,7 +1977,7 @@ quests:
                 - text:
                     en: "This is structured information that an automated system can retrieve. You can access it through the MaRDI portal."
                     de: "Dies sind strukturierte Informationen, die ein automatisiertes System auslesen kann. Du kannst sie über das MaRDI-Portal abrufen."
-                  then: optionDone  
+                  then: optionDone
             - id: optionDone
               type: sequence
               items:
@@ -2028,7 +2030,7 @@ ending:
           class: 'citizensEmpowered'
           type: sequence
           items:
-            - text: 
+            - text:
                 en: 'Thank you for playing.'
                 de: "Danke fürs Spielen."
         - cond: 'COUNT("pnt.") = 0'
@@ -2115,7 +2117,7 @@ ending:
           text:
             en: "Knowledge Graph - a knowledge base in the form of a mathematical graph."
             de: "Knowledge Graph - eine Wissensdatenbank in Form eines Graphen."
-        - cond: 'quest.sharing1.done | quest.mardi1.done | quest.sharing2.done' 
+        - cond: 'quest.sharing1.done | quest.mardi1.done | quest.sharing2.done'
           text:
             en: "MaRDI and sharing research data."
             de: "MaRDI und die gemeinsame Nutzung von Forschungsdaten."
