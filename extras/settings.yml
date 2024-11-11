@@ -108,12 +108,12 @@ players:
     color: '#ea7a24'
     spawn: { x: 3095, y: 2155 }
 storylines:
-  - freiheit
+  - data-quest
 i18n:
   ui:
     defaultPrompt:
-      en: 'Talk to citizens with a :speech_bubble: to get quests and increase the level of Freedom in the city.'
-      de: 'Sprich mit Leuten mit einer :speech_bubble:, erhalte Aufgaben und mache die Stadt zu einem freieren Ort.'
+      en: 'Talk to people with a :speech_bubble: to get quests.'
+      de: 'Sprich mit Leuten mit einer :speech_bubble:, um Aufgaben zu erhalten.'
     decisionMade:
       en: ''
       de: ''
