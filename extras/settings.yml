@@ -1,0 +1,124 @@
+game:
+  languages: ['de', 'en']
+  canSwitchQuests: false
+  duration: 480
+  maxActiveQuests: 100
+  cameraPresets:
+    walking:
+      offset:
+        x: 0
+        y: -1.35
+      zoom: 0.65
+    talking:
+      offset:
+        x: 0
+        y: -0.8
+      zoom: 1
+    drone:
+      offset:
+        x: 0
+        y: 0
+      zoom: 0.5
+textures:
+  bundles:
+    - name: 'town-view'
+      assets:
+        - name: 'town-bg'
+          srcs: 'freiheit.png'
+        - name: 'town-collmap'
+          srcs: 'freiheit-collmap.png'
+        - name: 'player-1'
+          srcs: 'player-1.json'
+        - name: 'player-2'
+          srcs: 'player-2.json'
+        - name: 'player-3'
+          srcs: 'player-3.json'
+        - name: 'npcs-demo'
+          srcs: 'npcs-demo.json'
+        - name: 'mood-balloon'
+          srcs: 'mood-balloon.json'
+        - name: 'map-markers'
+          srcs: 'map-markers.json'
+        - name: 'icons'
+          srcs: 'icons.json'
+        - name: 'target-arrow'
+          srcs: 'target-arrow.png'
+        - name: 'guide-arrow'
+          srcs: 'guide-arrow.png'
+        - name: 'protesters'
+          srcs: 'protesters.png'
+#        - name: 'activistPoster'
+#          srcs: 'activist-poster.png'
+#        - name: 'boardedDoors'
+#          srcs: 'boarded-doors.png'
+#        - name: 'comingSoon'
+#          srcs: 'coming-soon.png'
+        - name: 'ringlight'
+          srcs: 'ringlight.png'
+        - name: 'camera'
+          srcs: 'camera.png'
+        - name: 'statue'
+          srcs: 'statue.png'
+        - name: 'tree1'
+          srcs: 'tree-1.png'
+        - name: 'tree2'
+          srcs: 'tree-2.png'
+        - name: 'tree3'
+          srcs: 'tree-3.png'
+        - name: 'tree4'
+          srcs: 'tree-4.png'
+        - name: 'tree5'
+          srcs: 'tree-5.png'
+        - name: 'tradMusicians'
+          srcs: 'trad-musicians.png'
+        - name: 'guitar'
+          srcs: 'guitar.png'
+        - name: 'singer'
+          srcs: 'singer.png'
+        - name: 'drums'
+          srcs: 'drums.png'
+        - name: 'audience1'
+          srcs: 'audience-1.png'
+        - name: 'audience2'
+          srcs: 'audience-2.png'
+        - name: 'audience3'
+          srcs: 'audience-3.png'
+        - name: 'queue'
+          srcs: 'queue.png'
+        - name: 'babyCart'
+          srcs: 'baby-cart.png'
+        - name: 'fairF'
+          srcs: 'fair-f.png'
+        - name: 'fairA'
+          srcs: 'fair-a.png'
+        - name: 'fairI'
+          srcs: 'fair-i.png'
+        - name: 'fairR'
+          srcs: 'fair-r.png'
+players:
+  1:
+    color: '#27a6a8'
+    spawn: { x: 5113, y: 2674 }
+  2:
+    color: '#d331a3'
+    spawn: { x: 3576, y: 1319 }
+  3:
+    color: '#ea7a24'
+    spawn: { x: 3095, y: 2155 }
+storylines:
+  - freiheit
+i18n:
+  ui:
+    defaultPrompt:
+      en: 'Talk to citizens with a :speech_bubble: to get quests and increase the level of Freedom in the city.'
+      de: 'Sprich mit Leuten mit einer :speech_bubble:, erhalte Aufgaben und mache die Stadt zu einem freieren Ort.'
+    decisionMade:
+      en: ''
+      de: ''
+map:
+  scoreCounter:
+    categories:
+      - id: freedom
+        pattern: '^(pnt\.freedomSmall\.|pnt\.freedomLarge\.)'
+
+

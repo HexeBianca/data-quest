@@ -1,0 +1,21 @@
+{
+  "name": "citizen-quest-freiheit",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "degit": "^2.8.4",
+    "cpx": "^1.5.0"
+  },
+  "scripts": {
+    "start": "cd ./dist/server && npm run start",
+    "watch:copy": "cpx './extras/**' './dist/' -vw",
+    "watch:compile": "cd ./dist/src && npm run watch",
+    "install-server": "cd ./dist/server && npm install && cd ../..",
+    "build": "rm -rf ./dist && degit github:IMAGINARY/citizen-quest#v1.12.0 --force dist && cp -R ./extras/. ./dist/. && cd ./dist && npm install && npm run build && cd .. && npm run install-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IMAGINARY/citizen-quest-freiheit.git"
+  },
+  "private": true
+}

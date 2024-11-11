@@ -1,0 +1,70 @@
+$c-edsoc-yellow: #ffeb78;
+
+.multi-text-scroller {
+  padding: 0.2em 0 0.5em;
+  background-color: $c-edsoc-yellow;
+
+  .text-scroller {
+    background-color: transparent;
+  }
+}
+
+.map-app {
+  //&:after {
+  //  content: " ";
+  //  display: block;
+  //  position: absolute;
+  //  right: 0;
+  //  top: 1%;
+  //  background-image: url('../../static/ui/skills-overlay.svg');
+  //  background-size: contain;
+  //  background-repeat: no-repeat;
+  //  width: 15%;
+  //  height: 85%;
+  //}
+
+  .inclusion-bar {
+    display: none;
+  }
+
+  .score-counter-overlay {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    color: black;
+    font-size: 2em;
+
+    .score-counter-freedom {
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: " ";
+        display: inline-block;
+        background-image: url('../../static/icons/stats-freedomSmall.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 2em;
+        height: 2em;
+      }
+
+      .score-counter-value {
+        min-width: 1.5em;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.intro-screen {
+  background-color: $c-edsoc-yellow;
+
+  .waiting-text .text {
+    color: $c-edsoc-yellow;
+  }
+}
+
+.decision-screen {
+  background-color: $c-edsoc-yellow;
+}

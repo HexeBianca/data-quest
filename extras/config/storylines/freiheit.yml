@@ -1,0 +1,1922 @@
+decision:
+  en: "Some citizens don't have enough freedom, can't use the freedom they have, or don't feel really free. You can help them by completing their quests and raising the city's Level of Freedom."
+  de: "Einige Personen haben nicht genug Freiheit, können die Freiheit, die sie haben, nicht nutzen oder fühlen sich nicht wirklich frei. Du kannst ihnen helfen, indem du ihre Aufgaben erfüllst. So machst du die Stadt zu einem freieren Ort."
+prompt:
+  en: "Some citizens don't have enough freedom, can't use the freedom they have, or don't feel really free. You can help them by completing their quests and raising the city's Level of Freedom."
+  de: "Einige Personen haben nicht genug Freiheit, können die Freiheit, die sie haben, nicht nutzen oder fühlen sich nicht wirklich frei. Du kannst ihnen helfen, indem du ihre Aufgaben erfüllst. So machst du die Stadt zu einem freieren Ort."
+npcs:
+  mayor:
+    name:
+      en: Mayor
+      de: Bürgermeisterin
+    spawn: { x: 2910, y: 3428 }
+    actAs: ['_fakeNews3CantHelp']
+    dialogue:
+      - text:
+          en: "The city government wants to have an active role in urban development."
+          de: "Die Stadtverwaltung möchte eine aktive Rolle in der Stadtentwicklung spielen."
+  librarian:
+    name:
+      en: Librarian
+      de: Bibliothekarin
+    type: citizenPuan
+    spawn: { x: 6098, y: 2079 }
+    actAs: ['_aiSurveillance1Ally', '_fakeNews3CantHelp', '_ageNotOld']
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "A great way to spend your afternoon? The library, yay!"
+              de: "Wo kann man einen tollen Nachmittag verbringen? In der Bibliothek, juhu!"
+          - text:
+              en: "We have books, comics, boardgames!"
+              de: "Wir haben Bücher, Comics, Brettspiele!"
+          - text:
+              en: "A not-so-great way to spend your afternoon? Go to the shopping center... boo!"
+              de: "Wo kann man einen nicht so tollen Nachmittag verbringen? Im Einkaufszentrum, wie öde!"
+  journalist:
+    name:
+      en: Journalist
+      de: Journalist
+    spawn: { x: 1847, y: 2722 }
+    actAs: ['_aiSurveillance1Ally', '_ageNotOld']
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "The role of journalists is changing..."
+              de: "Die Rolle der Journalist*innen ändert sich..."
+          - text:
+              en: "... so let me know if you need help fact-checking information, researching, or communicating something."
+              de: "... also lass mich wissen, wenn du Hilfe beim Überprüfen von Informationen, bei der Recherche oder bei der Kommunikation brauchst."
+          - text:
+              en: "I'll be glad to help!"
+              de: "Ich helfe gerne!"
+  securityGuard:
+    name:
+      en: Security Guard
+      de: Sicherheitspersonal
+    type: privateSecurityMan
+    spawn: { x: 1099, y: 3150 }
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "Please, move along."
+              de: "Bitte weitergehen."
+          - text:
+              en: "Thank you."
+              de: "Danke."
+  geldbergCeo:
+    name:
+      en: CEO
+      de: Geschäftsführer
+    type: ceo
+    spawn: { x: 912, y: 3256 }
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "We appreciate your interest, share your concerns, and thank you for your time."
+              de: "Wir freuen uns über dein Interesse, teilen deine Bedenken und danken dir für deine Zeit."
+          - text:
+              en: "We’re busy dreaming up solutions to tomorrow’s problems."
+              de: "Wir sind damit beschäftigt, Lösungen für die Probleme von morgen zu finden."
+          - text:
+              en: "At Geldberg, We're on Top of It!"
+              de: "Bei Geldberg haben wir alles im Griff!"
+  youngCitizen:
+    name:
+      en: Young Citizen
+      de: Junge Bürgerin
+    type: citizenCat
+    spawn: { x: 2291, y: 1997 }
+    actAs: ['_aiSurveillance1Ally', '_fakeNews3FewFollowers', '_ageYoung']
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "The Geldberg Corporation is my nemesis. "
+              de: "Die Firma Geldberg ist mein Erzfeind. "
+          - text:
+              en: "They dream of turning the city into a technocratic dystopia, a digitally run fiefdom."
+              de: "Sie träumen davon, die Stadt in eine technokratische Dystopie zu verwandeln, ein digital geführtes Feudalsystem."
+          - text:
+              en: "No, just kidding... this is real life, not a video game. They're pretty evil though."
+              de: "Nein, nur ein Scherz... das ist das echte Leben, kein Videospiel. Aber sie sind ziemlich böse."
+  policeMan:
+    name:
+      en: Police officers
+      de: Polizei
+    type: policeMan
+    spawn: { x: 4309, y: 1217 }
+    actAs: _policeOfficers
+  policeWoman:
+    name:
+      en: Police officers
+      de: Polizei
+    type: policeWoman
+    spawn: { x: 4409, y: 1217 }
+    actAs: _policeOfficers
+  biologist:
+    name:
+      en: Biologist
+      de: Biologin
+    spawn: { x: 4998, y: 1581 }
+    actAs: ['_aiSurveillance1Ally', '_fakeNews3CantHelp', '_ageNotOld']
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "Bears are my favorite animal. They've been extinct in Germany since 1835."
+              de: "Bären sind meine Lieblingstiere. In Deutschland sind sie seit 1835 ausgerottet."
+          - text:
+              en: "I've applied for a grant to study bears. Wish me luck!"
+              de: "Ich habe mich für ein Stipendium beworben, um Bären zu erforschen. Drück mir die Daumen!"
+          - text:
+              en: "(I study bees now. Bees are fine. But I'm afraid of bees.)"
+              de: "(Ich erforsche jetzt Bienen. Bienen sind in Ordnung. Aber ich habe Angst vor Bienen.)"
+  videoBlogger:
+    name:
+      en: Videoblogger
+      de: Videoblogger
+    spawn: { x: 2458, y: 1255 }
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "We sailed for a week with the science pioneers of MaRDI! See where we went in this video!"
+              de: "Wir segelten eine Woche lang mit den Wissenschaftspionieren von MaRDI! Schau dir in diesem Video an, wo wir waren!"
+          - text:
+              en: "Can we survive a whole evening in the shopping center with only €10? Find out in this video!"
+              de: "Können wir einen ganzen Abend im Einkaufszentrum mit nur 10 € überleben? Finde es in diesem Video heraus!"
+          - text:
+              en: "Does Free Will exist? We asked a physicist! Now you’ll have to watch our video and find out…"
+              de: "Gibt es einen freien Willen? Wir haben einen Physiker gefragt! Jetzt musst du unser Video ansehen und es herausfinden..."
+          - text:
+              en: "In this video, I’ll visit the ten best restaurants in the area… They’re all the same ramen place!"
+              de: "In diesem Video besuche ich die zehn besten Restaurants in der Gegend... Sie sind alle dasselbe Ramen-Restaurant!"
+          - text:
+              en: "Don’t forget to LIKE and SUBSCRIBE!"
+              de: "Vergiss nicht zu LIKEN und zu ABONNIEREN!"
+  artist:
+    name:
+      en: Artist
+      de: Künstlerin
+    type: citizenWheelchair
+    spawn: { x: 2540, y: 809 }
+    actAs: ['_aiSurveillance1Ally', '_fakeNews3FewFollowers', '_ageNotOld']
+    dialogue:
+      - cond: 'quest.band1.done'
+        text:
+          en: "Wow! They sound so good playing together!"
+          de: "Wow! Wie schön es klingt, wenn sie zusammen spielen!"
+      - text:
+          en: "I trained as a painter, but now I work as a band manager."
+          de: "Ich habe eine Ausbildung als Malerin gemacht, aber jetzt arbeite ich als Bandmanagerin."
+  footballFan:
+    name:
+      en: Football Fan
+      de: Fußballfan
+    type: citizenChamp
+    spawn: { x: 3776, y: 1530 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "You recognize my T-shirt? The best team of the world!"
+          de: "Du erkennst mein T-Shirt? Das beste Team von der Welt!"
+  barista:
+    name:
+      en: Barista
+      de: Barista
+    spawn: { x: 4138, y: 3680 }
+    actAs: ['_fakeNews3FewFollowers', '_ageNotOld']
+    dialogue:
+      - text:
+          en: "I’m training for the World Barista Championship."
+          de: "Ich trainiere für die Baristaweltmeisterschaft."
+  bikeMessenger:
+    name:
+      en: Bike Messenger
+      de: Fahrradkurier
+    spawn: { x: 3618, y: 750 }
+    cond: '^(quest.band1.done & (^quest.band1.active | quest.band1.local))'
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "I'm saving to buy a new guitar. Mine got damaged on my flight to Germany."
+          de: "Ich spare, um mir eine neue Gitarre zu kaufen. Meine alte wurde auf dem Flug nach Deutschland beschädigt."
+  windowCleaner:
+    name:
+      en: Window Cleaner
+      de: Fensterputzerin
+    type: windowWasher
+    spawn: { x: 272, y: 3234 }
+    actAs: ['_ageNotOld']
+    cond: '^(quest.band2.done & (^quest.band2.active | quest.band2.local))'
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "I asked for a raise, because my rent went up, but my boss said no. "
+              de: "Ich habe um eine Gehaltserhöhung gebeten, weil meine Miete gestiegen ist, aber mein Chef hat abgelehnt."
+          - text:
+              en: "My boss is an AI. My landlord is also an AI."
+              de: "Mein Chef ist eine KI. Mein Vermieter ist auch eine KI."
+  driver:
+    name:
+      en: Driver
+      de: Fahrerin
+    spawn: { x: 6690, y: 2263 }
+    actAs: ['_ageNotOld']
+    cond: '^(quest.band2.done & (^quest.band3.active | quest.band3.local))'
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "I played the violin in my country, but they're incredibly expensive, so I still haven't bought one here."
+              de: "In meiner Heimat habe ich Geige gespielt, aber die sind unglaublich teuer, also habe ich mir hier noch keine gekauft."
+          - text:
+              en: "I'm past the age to think of joining the Philharmonic, so it can wait."
+              de: "Ich bin zu alt, um bei der Philharmonie anzufangen, also eilt das nicht."
+  mathFan:
+    name:
+      en: Libby
+      de: Libby
+    type: citizenDaphne
+    spawn: { x: 5279, y: 2293 }
+    actAs: ['_fakeNews3FewFollowers', '_ageYoung']
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "I heard, a math ship has just docked in the city harbor. How cool is this!"
+              de: "Ich habe gehört, dass gerade ein Mathe-Schiff im Stadthafen angelegt hat. Wie cool ist das denn!"
+          - text:
+              en: "Math is my favorite subject."
+              de: "Mathe ist mein Lieblingsfach."
+  mardiMathematician:
+    name:
+      en: Mathematician
+      de: Mathematiker
+    type: citizenPunk
+    spawn: { x: 6300, y: 3334 }
+    actAs: ['_aiSurveillance1Ally', '_fakeNews3CantHelp', '_ageNotOld']
+    dialogue:
+      - type: cycle
+        items:
+          - text:
+              en: "I come from the realm of MaRDI."
+              de: "Ich komme aus dem Reich MaRDI."
+          - text:
+              en: "We Mardians are pioneers of scientific freedom and want to make mathematical research data FAIR."
+              de: "Wir Mardianer sind Pioniere der Wissenschaftsfreiheit und wollen mathematische Forschungsdaten FAIR machen."
+          - text:
+              en: "Go ask my colleague about the FAIR principles!"
+              de: "Frag mal meine Kollegin zu den FAIR-Prinzipien!"
+  mardiHelpDesk:
+    name:
+      en: Help Desk
+      de: Help Desk
+    spawn: { x: 5791, y: 3055 }
+    type: citizenBraid
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "The FAIR principles for research data are:  Findability, Accessibility, Interoperability, and Reusability."
+              de: "Die FAIR-Prinzipien für Forschungsdaten sind: Auffindbarkeit, Zugänglichkeit, Verknüpfbarkeit und Wiederverwendbarkeit. Im Englischen sind die Anfangsbuchstaben FAIR."
+          - text:
+              en: "Which principle are you interested in?"
+              de: "Über welches Prinzip möchtest Du mehr erfahren?"
+            responses:
+              - text:
+                  en: "Findability"
+                  de: "Auffindbarkeit"
+                then: optionF
+              - text:
+                  en: "Accessibility"
+                  de: "Zugänglichkeit"
+                then: optionA
+              - text:
+                  en: "Interoperability"
+                  de: "Verknüpfbarkeit"
+                then: optionI
+              - text:
+                  en: "Reusability"
+                  de: "Wiederverwendbarkeit"
+                then: optionR
+              - text:
+                  en: "No, thank you."
+                  de: "Nein, danke."
+                thenText:
+                  en: "OK. Come back anytime if you want to know more."
+                  de: "Okay. Komm gern wieder, wenn du mehr wissen willst."
+      - id: optionF
+        type: sequence
+        items:
+          - text:
+              en: "Findability is the most basic FAIR principle."
+              de: "Auffindbarkeit ist die Basis der FAIR-Prinzipien."
+          - text:
+              en: "If you can't find some data, you can't use it in any way, it is as if it does not exist!"
+              de: "Wenn man bestimmte Daten nicht finden kann, kann man sie einfach nicht verwenden, so als ob sie nicht existieren würden."
+      - id: optionA
+        type: sequence
+        items:
+          - text:
+              en: "Access to research information is the most fundamental principle for spreading science across the scientific community and society."
+              de: "Der Zugang zu Forschungsdaten ist der wichtigste Grundsatz, um die Wissenschaft in der wissenschaftlichen Gemeinschaft und in der Gesellschaft zu verbreiten."
+          - text:
+              en: "Who has access? How can you access it?"
+              de: "Wer hat Zugang? Wie genau kann man zugreifen?"
+      - id: optionI
+        type: sequence
+        items:
+          - text:
+              en: "Interoperability is the third and may be one of the most challenging of the FAIR principles."
+              de: "Verknüpfbarkeit ist das dritte Prinzip und vielleicht das herausfordernste."
+          - text:
+              en: "Computers operate many formats and languages and they change over time."
+              de: "Computer arbeiten mit vielen Formaten und Sprachen, die sich im Laufe der Zeit ändern."
+          - text:
+              en: "Its key question is: How can a digital object be seamlessly transferred from one researcher or system to another?"
+              de: "Die zentrale Frage lautet: Wie übergibt man ein digitales Objekt nahtlos von einem Forschenden oder einem System an jemand anderen oder ein anderes System?"
+      - id: optionR
+        type: sequence
+        items:
+          - text:
+              en: "To make experimental data reusable, it is important to document the experiment's purpose, how it was done, and who did it."
+              de: "Um experimentelle Daten wiederverwendbar zu machen, ist es wichtig, den Zweck des Experiments zu dokumentieren, wie es durchgeführt wurde, und wer es durchgeführt hat."
+          - text:
+              en: "Also: what was recorded, how is it organized, which software was used, and which version of the dataset is it, …"
+              de: "Außerdem: Was wurde aufgezeichnet, wie ist es organisiert, welche Software wurde verwendet und um welche Version des Datensatzes handelt es sich, …"
+  gameDev:
+    name:
+      en: Necati
+      de: Necati
+    type: citizenDough
+    spawn: { x: 4824, y: 3274 }
+    actAs: ['_fakeNews3FewFollowers', '_ageNotOld']
+    dialogue:
+      - type: sequence
+        items:
+          - text:
+              en: "I love my dog Emmy, and computer games."
+              de: "Ich liebe meinen Hund Emmy und Computerspiele."
+          - text:
+              en: "My dream is to develop a computer game for a science boat."
+              de: "Ich träume davon, ein Computerspiel für ein Wissenschaftsschiff zu programmieren."
+  dogTan:
+    name:
+      en: "Emmy"
+    spawn: { x: 4955, y: 3274 }
+    dialogue:
+      - text:
+          en: "Woof!"
+          de: "Wuff!"
+  engineer:
+    name:
+      en: Engineer
+      de: Ingenieur
+    spawn: { x: 1427, y: 2911 }
+    dialogue:
+      - text:
+          en: "The new mayor is doing things to make people go out of their homes and come together."
+          de: "Die neue Bürgermeisterin unternimmt einiges, damit die Leute aus ihren Wohnungen kommen und sich treffen."
+  citizenOpen1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenHoodie
+    spawn: { x: 1848, y: 1146 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "There used to be a movie theater where the Geldberg building now stands."
+          de: "Wo jetzt das Geldberg-Gebäude steht, gab es früher ein Kino."
+  citizenInvolved1:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenAcqua
+    spawn: { x: 5221, y: 2144 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "Thanks to our new community garden, I've gotten to know my neighbors... after 5 years of living in the building!"
+          de: "Dank unseres neuen Gemeinschaftsgartens habe ich meine Nachbar*innen kennengelernt... obwohl wir schon 5 Jahre im gleichen Haus wohnen!"
+  citizenInvolved2:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenCage
+    spawn: { x: 4294, y: 1841 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "The Geldberg Company is building new luxury apartments. How about some regular ones?"
+          de: "Die Firma Geldberg baut neue Luxusappartements. Wie wäre es stattdessen mit ein paar normalen Wohnungen?"
+  citizenEstablished1:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: citizenHipster
+    spawn: { x: 2361, y: 2747 }
+    actAs: ['_ageOld']
+    dialogue:
+      - text:
+          en: "I hope the government does something about the crime wave."
+          de: "Ich hoffe, die Regierung unternimmt etwas gegen den Anstieg der Kriminalität."
+  citizenEstablished2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: parksDirector
+    spawn: { x: 4370, y: 3330 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "Sorry, can't talk right now."
+          de: "Tut mir leid, ich kann gerade nicht reden."
+  citizenDetached1:
+    name:
+      en: "Tourist"
+      de: "Tourist"
+    type: tourist
+    spawn: { x: 3293, y: 681 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "I wonder what that ship that just docked in the city is all about..."
+          de: "Ich frage mich, was es mit dem Schiff auf sich hat, das gerade im Stadthafen angedockt hat..."
+  citizenDetached2:
+    name:
+      en: "Neighbor"
+      de: "Nachbar"
+    type: lawyer
+    spawn: { x: 2190, y: 817 }
+    actAs: ['_ageOld']
+    dialogue:
+      - text:
+          en: "Things are bad, and I can only imagine them getting worse."
+          de: "Die Dinge stehen schlecht, und ich fürchte, dass sie noch schlimmer werden."
+  citizenDisillusioned2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenLila
+    spawn: { x: 2971, y: 1973 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "My friend went to the ramen place and found a bone inside the \"tofu\"!"
+          de: "Mein Freund war in einem Ramen-Restaurant und hat einen Knochen im „Tofu“ gefunden!"
+  citizenAngry2:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenQueen
+    spawn: { x: 2096, y: 1539 }
+    actAs: ['_ageOld']
+    dialogue:
+      - text:
+          en: "Why are you talking to a stranger?"
+          de: "Warum sprichst du mit einem Fremden?"
+  citizenYoga:
+    name:
+      en: "Neighbor"
+      de: "Nachbarin"
+    type: citizenTennis
+    spawn: { x: 4029, y: 2430 }
+    actAs: ['_ageNotOld']
+    dialogue:
+      - text:
+          en: "We have an open yoga session here every Wednesday. Come!"
+          de: "Wir haben hier jeden Mittwoch eine offene Yogastunde. Komm vorbei!"
+  protesterProxy1:
+    name:
+      en: "Protesters"
+      de: "Protestierende"
+    type: invisible
+    spawn: { x: 3188, y: 3379 }
+    actAs: _aiSurveillanceProtesters
+    cond: 'quest.aiSurveillance3.active & ^quest.aiSurveillance3.local'
+  protesterProxy2:
+    name:
+      en: "Protesters"
+      de: "Protestierende"
+    type: invisible
+    spawn: { x: 3322, y: 3380 }
+    actAs: _aiSurveillanceProtesters
+    cond: 'quest.aiSurveillance3.active & ^quest.aiSurveillance3.local'
+dialogues:
+  _policeOfficers:
+    - type: sequence
+      items:
+        - text:
+            en: "The government is considering installing AI-powered cameras all over the city because of bicycle robberies."
+            de: "Die Regierung erwägt, wegen der Fahrraddiebstähle überall in der Stadt KI-gesteuerte Kameras zu installieren."
+        - text:
+            en: "... but the bicycle robberies have actually been going down for years."
+            de: "... aber die Fahrraddiebstähle sind eigentlich seit Jahren rückläufig."
+        - text:
+            en: "People are just scared because of online videos that show crimes in progress."
+            de: "Die Leute haben nur Angst wegen der Online-Videos, die aktuelle Verbrechen zeigen."
+scenery:
+  ringlight:
+    spawn: { x: 2394, y: 1305 }
+  camera:
+    spawn: { x: 2535, y: 1313 }
+  tree1:
+    spawn: { x: 2880, y: 1829 }
+  tree2:
+    spawn: { x: 3085, y: 1913 }
+  tree3:
+    spawn: { x: 3617, y: 1464 }
+  tree4:
+    spawn: { x: 4959, y: 2187 }
+  tree5:
+    spawn: { x: 5145, y: 2281 }
+  babyCart:
+    spawn: { x: 3699, y: 1530 }
+  drums:
+    spawn: { x: 2872, y: 796 }
+    layer: back
+    zIndex: 1
+    cond: 'quest.band2.done & (^quest.band2.active | quest.band2.local)'
+  tradMusicians:
+    spawn: { x: 3039, y: 804 }
+    layer: back
+    zIndex: 2
+  singer:
+    spawn: { x: 2905, y: 869 }
+    layer: back
+    zIndex: 3
+    cond: 'quest.band3.done & (^quest.band3.active | quest.band3.local)'
+  guitar:
+    spawn: { x: 2768, y: 878 }
+    layer: back
+    zIndex: 4
+    cond: 'quest.band1.done & (^quest.band1.active | quest.band1.local)'
+  audience1:
+    spawn: { x: 3039, y: 1018 }
+    cond: 'quest.band1.done'
+  audience2:
+    spawn: { x: 3076, y: 1064 }
+    cond: 'quest.band2.done'
+  audience3:
+    spawn: { x: 3110, y: 1092 }
+    cond: 'quest.band3.done'
+  queue:
+    spawn: { x: 4284, y: 737 }
+    cond: 'quest.fakeNews3.done'
+  protesters:
+    spawn: { x: 3253, y: 3369 }
+    cond: 'quest.aiSurveillance3.active & ^quest.aiSurveillance3.local'
+  fairF:
+    spawn: { x: 5951, y: 3032 }
+    layer: back
+    cond: 'quest.mardiF.done'
+  fairA:
+    spawn: { x: 6105, y: 2869 }
+    layer: back
+    cond: 'quest.mardiA.done'
+  fairI:
+    spawn: { x: 6334, y: 2797 }
+    layer: back
+    cond: 'quest.mardiI.done'
+  fairR:
+    spawn: { x: 6523, y: 2611 }
+    layer: back
+    cond: 'quest.mardiR.done'
+quests:
+  aiSurveillance1:
+    npc: geldbergCeo
+    mood: surveillance
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "We deployed an AI-based surveillance system to fight crime!"
+                de: "Wir haben ein KI-gestütztes Überwachungssystem zur Verbrechensbekämpfung entwickelt!"
+            - text:
+                en: "It will help police stop crime before it even happens."
+                de: "Es kann der Polizei helfen, Verbrechen zu stoppen, bevor sie überhaupt begangen werden."
+            - text:
+                en: "… but it seems the mayor is too afraid of technology."
+                de: "... aber es scheint, dass die Bürgermeisterin zu viel Angst vor neuen Technologien hat."
+            - text:
+                en: "Can you help me convince her to authorize its use?"
+                de: "Kannst du mir helfen, sie davon zu überzeugen, den Einsatz unseres Systems zu genehmigen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Go to the Rathaus and talk to the mayor."
+                    de: "Geh zum Rathaus und sprich mit der Bürgermeisterin."
+                  set: [ 'quest.aiSurveillance1.active' ]
+                - text:
+                    en: "Refuse"
+                    de: "Ablehnen"
+                  then: 'refusal'
+        - id: refusal
+          text:
+            en: "Why won’t you help me?"
+            de: "Warum willst du mir nicht helfen?"
+          responses:
+            - text:
+                en: "I don’t know"
+                de: "Weiß nicht."
+              thenText:
+                en: "Think it over. But not too much. Crime is taking place right now!"
+                de: "Überleg es dir. Aber nicht zu lange. Es finden zu jeder Zeit Verbrechen statt!"
+            - text:
+                en: "I have some questions about the system."
+                de: "Ich habe ein paar Fragen zu dem System."
+              then: success
+            - text:
+                en: "I want to hear the opinions of experts."
+                de: "Ich möchte die Meinung von Fachleuten hören."
+              then: success
+        - id: success
+          text:
+            en: "Oof! You’re afraid of progress, just like the mayor!"
+            de: "Mensch! Du hast Angst vor dem Fortschritt, genau wie die Bürgermeisterin!"
+          set: [ 'quest.aiSurveillance1.done', 'pnt.freedomSmall.aiSurveillance1' ]
+    stages:
+      - prompt:
+          en: "Talk to the mayor and ask her to authorize the use of AI-based surveillance (hmm… )"
+          de: "Sprich mit der Bürgermeisterin und bitte sie, den Einsatz von KI-gestützter Überwachung zu genehmigen (hmm...)"
+        target: mayor
+        dialogues:
+          geldbergCeo:
+            - text:
+                en: "Go talk to the mayor. Police officers ask me daily, “When will the system come online?”"
+                de: "Sprich mit der Bürgermeisterin. Die Polizei fragt mich täglich: „Wann können wir das System benutzen?“"
+          _aiSurveillance1Ally:
+            - type: sequence
+              items:
+                - text:
+                    en: "Is the CEO asking you to pressure the mayor for the Geldberg company?"
+                    de: "Will der Geschäftsführer, dass du die Bürgermeisterin für seine Firma Geldberg beeinflusst?"
+                - text:
+                    en: "You should ask the police what they think."
+                    de: "Frag vielleicht mal die Polizei, was sie davon hält."
+          _policeOfficers:
+            - type: sequence
+              items:
+                - text:
+                    en: "We can see some of the advantages of the AI system…"
+                    de: "Wir sehen ein paar Vorteile im KI-System..."
+                - text:
+                    en: "… but it must be a tool, not a replacement for our work."
+                    de: "... aber es darf nur ein Werkzeug sein, kein Ersatz für unsere Arbeit."
+                - text:
+                    en: "We are working alongside the mayor and other experts, which is why it’s not authorized yet."
+                    de: "Wir arbeiten mit der Bürgermeisterin und anderen Fachleuten gemeinsam an einer Lösung, aber das braucht Zeit."
+                - text:
+                    en: "Thanks for checking with us."
+                    de: "Danke, dass du dich bei uns erkundigt hast."
+                  set: [ 'quest.aiSurveillance1.done', 'pnt.freedomSmall.aiSurveillance1']
+          mayor:
+            - type: sequence
+              items:
+                - text:
+                    en: "Is the Geldberg company using you to lobby for their AI system?"
+                    de: "Die Firma Geldberg schickt dich, um für ihr KI-System zu werben?"
+                - text:
+                    en: "A decision might take time, but it’s essential to make the right one."
+                    de: "Eine Entscheidung braucht Zeit, denn es ist wichtig, richtig zu entscheiden."
+                - text:
+                    en: "We are currently discussing it with experts and the police, so waiting is the right thing for citizens."
+                    de: "Wir beraten uns derzeit mit Fachleuten und der Polizei. Die Bevölkerung muss sich noch etwas gedulden."
+                  set: [ 'quest.aiSurveillance1.done', 'pnt.freedomNegative.aiSurveillance1']
+  aiSurveillance2:
+    npc: youngCitizen
+    mood: surveillance
+    required: aiSurveillance1
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I’m worried about the AI-based surveillance system being installed in the city…"
+                de: "Ich mache mir Sorgen über das KI-gestützte Überwachungssystem, das in der Stadt eingesetzt werden soll..."
+            - text:
+                en: "I read AI sometimes is biased against certain people, like those with darker skin."
+                de: "Ich habe gelesen, dass durch KI manchmal bestimmte Menschen benachteiligt werden, z. B. Menschen mit dunkler Hautfarbe."
+            - text:
+                en: "Can you help me check if this is fake news?"
+                de: "Hilfst du mir zu überprüfen, ob das Gerücht stimmt?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Talk to the journalist who wrote about this subject."
+                    de: "Sprich mit dem Journalisten, der über dieses Thema geschrieben hat."
+                  set: [ 'quest.aiSurveillance2.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - cond: 'quest.aiSurveillance2.spokenToJournalist'
+        prompt:
+          en: "Ask the scientist about AI-based surveillance."
+          de: "Frag die Wissenschaftlerin nach KI-gestützter Überwachung."
+        target: biologist
+        dialogues:
+          youngCitizen:
+            - text:
+                en: "You should talk to the scientist."
+                de: "Sprich am besten mit der Wissenschaftlerin."
+          journalist:
+            - text:
+                en: "You should talk to the scientist I interviewed for my article."
+                de: "Sprich am besten mit der Wissenschaftlerin, die ich für meinen Artikel interviewt habe."
+          biologist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, AI systems can make mistakes."
+                    de: "Ja, KI-Systeme können Fehler machen."
+                - text:
+                    en: "It’s important that citizens understand how the AI works…"
+                    de: "Es ist wichtig, dass alle verstehen, wie solche Systeme funktionieren,…"
+                - text:
+                    en: "… that the data used to train the AI is not biased…"
+                    de: "… dass die Daten, mit denen eine KI trainiert wird, frei von Vorurteilen sind…"
+                - text:
+                    en: "… and that the AI system explains the reasons for its decisions."
+                    de: "…und, dass die Systeme ihre Entscheidungen logisch erklären können."
+                  set: [ 'quest.aiSurveillance2.done', 'pnt.freedomSmall.aiSurveillance2' ]
+      - prompt:
+          en: "Ask the journalist about AI-based surveillance."
+          de: "Frag den Journalisten nach KI-gestützter Überwachung."
+        target: journalist
+        dialogues:
+          youngCitizen:
+            - text:
+                en: "Talk to the journalist who wrote about this subject."
+                de: "Sprich mit dem Journalisten, der über dieses Thema geschrieben hat."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, AI systems can be biased against people of certain ethnicities, skin colors, gender, etc."
+                    de: "Ja, KI-Systeme können gegenüber Menschen bestimmter Ethnien, Hautfarben, Geschlechter usw. voreingenommen sein."
+                - text:
+                    en: "AI systems’ decisions depend on the data they’ve been trained on…"
+                    de: "Die Entscheidungen von KI-Systemen hängen von den Daten ab, mit denen sie trainiert wurden..."
+                - text:
+                    en: "… and this data can carry past mistakes and biases."
+                    de: "... und diese Daten können alte Fehler und Vorurteile enthalten."
+                - text:
+                    en: "You should talk to the scientist I interviewed for my article."
+                    de: "Sprich am besten mit der Wissenschaftlerin, die ich für meinen Artikel interviewt habe."
+                  set: [ 'quest.aiSurveillance2.spokenToJournalist' ]
+  aiSurveillance3:
+    npc: youngCitizen
+    mood: surveillance
+    required: aiSurveillance2
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The Geldberg Company posted many scary videos about crime in the city…"
+                de: "Die Firma Geldberg hat viele schockierende Videos über die Kriminalität in der Stadt veröffentlicht..."
+            - text:
+                en: "… now, people are in front of the Rathaus, demanding the authorization of the AI-based surveillance system."
+                de: "... jetzt stehen Protestierende vor dem Rathaus und fordern die Genehmigung des KI-gestützten Überwachungssystems der Firma."
+            - text:
+                en: "Can you talk to the protesters and explain the issues with AI systems?"
+                de: "Kannst du mit den Protestierenden sprechen und ihnen die Probleme mit KI-Systemen erklären?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Talk to the protesters, please. There’s too much shouting for me."
+                    de: "Sprich bitte mit den Protestierenden. Mir sind sie zu aggressiv."
+                  set: [ 'quest.aiSurveillance3.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Explain the issues with AI-based surveillance to the protesters in front of the Rathaus."
+          de: "Erkläre den Protestierenden vor dem Rathaus die Problematik der KI-gestützten Überwachung."
+        dialogues:
+          youngCitizen:
+            - type: sequence
+              items:
+                - text:
+                    en: "The scientist explained that it’s important that citizens understand how the AI works…"
+                    de: "Die Wissenschaftlerin sagt, es ist wichtig, dass alle verstehen, wie das KI-System funktioniert,…"
+                - text:
+                    en: "…that the data used to train the AI is not biased…"
+                    de: "…dass die Daten, mit denen die KI trainiert wurde, frei von Vorurteilen sind…"
+                - text:
+                    en: "… and that the AI system explains the reasons for its decisions."
+                    de: "…und, dass das System seine Entscheidungen logisch erklären kann."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, AI systems can be biased against people of certain ethnicities, skin colors, gender, etc."
+                    de: "Ja, KI-Systeme können gegenüber Menschen bestimmter Ethnien, Hautfarben, Geschlechter usw. voreingenommen sein."
+                - text:
+                    en: "AI systems’ decisions depend on the data they’ve been trained on…"
+                    de: "Die Entscheidungen von KI-Systemen hängen von den Daten ab, mit denen sie trainiert wurden..."
+                - text:
+                    en: "… and this data can carry past mistakes and biases."
+                    de: "... und diese Daten können alte Fehler und Vorurteile enthalten."
+          biologist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, AI systems can make mistakes."
+                    de: "Ja, KI-Systeme können Fehler machen."
+                - text:
+                    en: "It’s important that citizens understand how the AI works…"
+                    de: "Es ist wichtig, dass alle verstehen, wie solche Systeme funktionieren,…"
+                - text:
+                    en: "… that the data used to train the AI is not biased…"
+                    de: "… dass die Daten, mit denen eine KI trainiert wird, frei von Vorurteilen sind…"
+                - text:
+                    en: "… and that the AI system explains the reasons for its decisions."
+                    de: "…und, dass die Systeme ihre Entscheidungen logisch erklären können."
+          _aiSurveillanceProtesters:
+            - text:
+                en: "AI-based policing NOW! What reasons are there to delay its use?"
+                de: "Wir brauchen KI-gestützte Polizeiarbeit JETZT! Welche Gründe gibt es, den Einsatz zu verzögern?"
+              responses:
+                - text:
+                    en: "Citizens need to understand how it works."
+                    de: "Alle müssen verstehen, wie das funktioniert."
+                  then: question2
+                - text:
+                    en: "It’s better to wait for the release of the next version."
+                    de: "Es ist besser, auf die Veröffentlichung der nächsten Version zu warten."
+                  then: failure
+                - text:
+                    en: "It’s the mayor’s decision, and we shouldn’t argue with it."
+                    de: "Es ist die Entscheidung der Bürgermeisterin, und wir sollten sie nicht anfechten."
+                  then: failure
+            - id: question2
+              text:
+                en: "Why? What’s the worst that could happen?"
+                de: "Und warum? Was könnte denn im schlimmsten Fall passieren?"
+              responses:
+                - text:
+                    en: "It could try to take over the world."
+                    de: "Die KI könnte versuchen, die Weltherrschaft an sich zu reißen."
+                  then: failure
+                - text:
+                    en: "It could be biased against certain people."
+                    de: "Die KI könnte gegen bestimmte Leute voreingenommen sein."
+                  then: question3
+                - text:
+                    en: "It could accept bribes from criminals and let them go free."
+                    de: "Die KI könnte von Kriminellen bestochen werden und sie freilassen."
+                  then: failure
+            - id: question3
+              text:
+                en: "But judges are still human!"
+                de: "Aber am Gericht entscheiden ja immer noch Menschen!"
+              responses:
+                - text:
+                    en: "Yes, but judges should be replaced by AI as well."
+                    de: "Stimmt, Richterinnen und Richter sollten auch durch KI ersetzt werden."
+                  then: failure
+                - text:
+                    en: "Yes, so the AI should be able to explain its decisions."
+                    de: "Genau, deshalb sollte die KI in der Lage sein, ihre Entscheidungen zu erklären."
+                  then: success
+                - text:
+                    en: "Yes, but ideally, AI should send criminals to jail directly."
+                    de: "Ja, aber idealerweise sollte die KI Kriminelle direkt ins Gefängnis werfen."
+                  then: failure
+            - id: failure
+              text:
+                en: "Pshaw! That doesn’t make sense!"
+                de: "Pah! Das macht doch keinen Sinn!"
+            - id: success
+              text:
+                en: "Hmm… that makes some sense."
+                de: "Ok, stimmt schon."
+              set: [ 'quest.aiSurveillance3.done', 'pnt.freedomLarge.aiSurveillance3' ]
+  fakeNews1:
+    npc: footballFan
+    mood: restaurant
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "My favorite ramen restaurant used to be full, but now it’s always empty."
+                de: "Mein Lieblings-Ramen-Restaurant war immer voll, jetzt ist es immer leer."
+            - text:
+                en: "Videos are going around saying that their tofu is actually meat."
+                de: "Es kursieren Videos, in denen behauptet wird, dass der Tofu dort eigentlich Fleisch ist."
+            - text:
+                en: "I thought it was fake news, but my friend says he found a bone inside his tofu!"
+                de: "Ich dachte erst, jemand hat absichtlich ein falsches Gerücht in die Welt gesetzt. Aber mein Freund sagt, er hat einen Knochen in seinem Tofu gefunden!"
+            - text:
+                en: "Can you help me check if this is fake news?"
+                de: "Kannst du mir helfen zu überprüfen, ob das Gerücht falsch ist?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Talk to my friend, maybe he still has the bone."
+                    de: "Sprich mit meinem Freund, vielleicht hat er den Knochen noch."
+                  set: [ 'quest.fakeNews1.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - cond: 'quest.fakeNews1.spokenToFriend'
+        prompt:
+          en: "Talk to the barista in the coffee stand."
+          de: "Sprich mit der Barista beim Kaffeestand."
+        target: barista
+        dialogues:
+          barista:
+            - type: sequence
+              items:
+                - text:
+                    en: "It wasn’t me who found the bone in the tofu."
+                    de: "Ich habe den Knochen nicht selbst im Tofu gefunden."
+                - text:
+                    en: "I saw it on a video. I think it happened to a friend of a friend."
+                    de: "Ich habe es in einem Video gesehen. Ich glaube, es ist dem Freund einer Freundin passiert."
+                - text:
+                    en: "Hmm… you think it could be fake? Geldberg Inc. is always trying to buy neighborhood restaurants."
+                    de: "Hmm... denkst du, es könnte ein falsches Gerücht sein? Die Firma Geldberg versucht immer wieder, Restaurants in der Nachbarschaft aufzukaufen."
+                  set: [ 'quest.fakeNews1.done', 'pnt.freedomSmall.fakeNews1' ]
+          citizenDisillusioned2:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, it’s true, but it didn’t happen to me. The barista who works in the coffee stand found the bone."
+                    de: "Ja, das ist wahr, aber das ist nicht mir passiert. Die Barista vom Kaffeestand hat den Knochen gefunden."
+                - text:
+                    en: "You should talk to her."
+                    de: "Du solltest mit ihr reden."
+      - prompt:
+          en: "Talk to the friend who found a bone inside his tofu."
+          de: "Sprich mit dem Freund, der einen Knochen in seinem Tofu gefunden hat."
+        target: citizenDisillusioned2
+        dialogues:
+          citizenDisillusioned2:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, it’s true, but it didn’t happen to me. The barista who works in the coffee stand found the bone."
+                    de: "Ja, das ist wahr, aber das ist nicht mir passiert. Die Barista vom Kaffeestand hat den Knochen gefunden."
+                - text:
+                    en: "You should talk to her."
+                    de: "Du solltest mit ihr reden."
+                  set: [ 'quest.fakeNews1.spokenToFriend' ]
+  fakeNews2:
+    npc: footballFan
+    mood: restaurant
+    required: fakeNews1
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "This rumor going around that the ramen restaurant makes their tofu out of meat could be fake."
+                de: "Das Gerücht, dass das Ramen-Restaurant seinen Tofu aus Fleisch herstellt, ist vielleicht falsch."
+            - text:
+                en: "We can’t find the person who found the bone…"
+                de: "Wir können die Person, die den Knochen gefunden hat, nicht finden..."
+            - text:
+                en: "… and we know the Geldberg company wants to buy the restaurant."
+                de: "... und wir glauben, dass die Firma Geldberg das Restaurant kaufen will."
+            - text:
+                en: "Can you help me check if this is fake news?"
+                de: "Kannst du mir helfen zu überprüfen, ob es sich um ein falsches Gerücht handelt?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Here, take this tofu to the university and have it tested."
+                    de: "Bring dieses Stück Tofu zur Universität und lass es testen."
+                  set: [ 'quest.fakeNews2.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Test the tofu in the university to check if it’s real."
+          de: "Teste den Tofu in der Universität, um zu prüfen, ob er echt ist."
+        target: biologist
+        dialogues:
+          footballFan:
+            - text:
+                en: "Take this tofu to the university and have it tested."
+                de: "Bring dieses Stück Tofu zur Universität und lass es testen."
+          biologist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Oh, yes! The tofu rumor! We also saw the videos and couldn’t believe it…"
+                    de: "Ja, ja! Das Tofu-Gerücht! Wir hatten auch die Videos gesehen und konnten es nicht glauben..."
+                - text:
+                    en: "… so we bought samples on different days and at different times, wearing a disguise!"
+                    de: "... also verkleideten wir uns und kauften an verschiedenen Tagen und zu verschiedenen Zeiten Tofustücke zum Testen!"
+                - text:
+                    en: "We tested all the samples and…"
+                    de: "Wir haben alle Stücke getestet und..."
+                - text:
+                    en: "… the tofu is 100% vegetal. The rumor is 100% fake news."
+                    de: "... der Tofu ist 100% pflanzlich. Das Gerücht ist zu 100% falsch, also Fake News!"
+                  set: [ 'quest.fakeNews2.done', 'pnt.freedomSmall.fakeNews2' ]
+          geldbergCeo:
+            - text:
+                en: "I don’t know anything about a ramen restaurant."
+                de: "Ich weiß nichts über ein Ramen-Restaurant."
+            - text:
+                en: "… it sounds like a very dirty and gross place."
+                de: "... es klingt nach einem schlechten Ort."
+  fakeNews3:
+    npc: footballFan
+    mood: restaurant
+    required: fakeNews2
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The videos that claim the ramen restaurant is making its tofu out of meat are a fake news campaign! Wow!"
+                de: "Die Videos, in denen behauptet wird, dass das Ramen-Restaurant seinen Tofu aus Fleisch herstellt, sind eine Fake-News-Kampagne! Wow!"
+            - text:
+                en: "I posted the tests that the university did online, but only got 2 :love:"
+                de: "Ich habe die Tests, die die Universität durchgeführt hat, online gestellt, aber nur 2 Leute haben mit :love: reagiert."
+            - text:
+                en: "… and one :love: was my own."
+                de: "... und ein :love: war von mir."
+            - text:
+                en: "Can you help me debunk the fake news?"
+                de: "Kannst du mir helfen, die Fake News öffentlich zu entlarven?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Find someone who can make the debunking go viral."
+                    de: "Finde jemanden, der die Wahrheit an die Öffentlichkeit bringt."
+                  set: [ 'quest.fakeNews3.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Find someone who can spread the truth about the ramen restaurant to thousands of people."
+          de: "Finde eine Person, die die Wahrheit über das Ramen-Restaurant an eine große Öffentlichkeit bringt."
+        dialogues:
+          footballFan:
+            - text:
+                en: "Find someone who can make the debunking go viral."
+                de: "Finde jemanden, der die Wahrheit an die Öffentlichkeit bringt."
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "A fake news campaign to force the restaurant to close and buy it cheap?"
+                    de: "Eine Fake-News-Kampagne, um das Restaurant zur Schließung zu zwingen und es billig aufzukaufen?!"
+                - text:
+                    en: "Let me write an article!"
+                    de: "Ich werde einen Artikel darüber schreiben!"
+                - text:
+                    en: ":clock: Some time later"
+                    de: ":clock: etwas später…"
+                - text:
+                    en: "500k :love:! Hopefully, this will end the rumors."
+                    de: "500k :love:! Hoffentlich ist dann bald Schluss mit den Gerüchten."
+                  set: [ 'quest.fakeNews3.done', 'pnt.freedomSmall.fakeNews3' ]
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "A fake news campaign to force the restaurant to close and buy it cheap?"
+                    de: "Eine Fake-News-Kampagne, um das Restaurant zur Schließung zu zwingen und es billig aufzukaufen?!"
+                - text:
+                    en: "Let me make a video!"
+                    de: "Ich werde ein Video darüber machen!"
+                - text:
+                    en: ":clock: Some time later"
+                    de: ":clock: etwas später…"
+                - text:
+                    en: "500k :love:! Hopefully, this will end the rumors."
+                    de: "500k :love:! Hoffentlich ist dann bald Schluss mit den Gerüchten."
+                  set: [ 'quest.fakeNews3.done', 'pnt.freedomLarge.fakeNews3' ]
+          geldbergCeo:
+            - text:
+                en: "I don’t know anything about a ramen restaurant."
+                de: "Ich weiß nichts über ein Ramen-Restaurant."
+            - text:
+                en: "… it sounds like a very dirty and gross place."
+                de: "... es klingt nach einem schlechten Ort."
+          _fakeNews3CantHelp:
+            - type: sequence
+              items:
+                - text:
+                    en: "This is great research work, and I’d gladly help, but…"
+                    de: "Das ist eine wichtige Aufdeckung, und ich würde gerne helfen, sie bekannt zu machen, aber..."
+                - text:
+                    en: "… we cannot use our social media accounts for this, sorry."
+                    de: "... wir können unsere Profile bei sozialen Medien für dieses Thema nicht verwenden, tut mir leid."
+                - text:
+                    en: "Maybe the videoblogger can help you."
+                    de: "Vielleicht kann der Videoblogger helfen."
+          _fakeNews3FewFollowers:
+            - text:
+                en: "I don’t have enough followers, sorry."
+                de: "Ich habe nicht genug Follower, tut mir leid."
+  band1:
+    npc: artist
+    mood: band
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I manage the band playing onstage. Unfortunately, it doesn’t attract a big audience these days."
+                de: "Ich manage die Band, die auf der Bühne spielt. Leider zieht sie heutzutage kein großes Publikum mehr an."
+            - text:
+                en: "The city hired us, so I have the budget to get additional members."
+                de: "Wir wurden von der Stadt angeheuert, also habe ich das Budget, um zusätzliche Mitglieder zu bekommen."
+            - text:
+                en: "Can you help me find new musicians to revitalize the band?"
+                de: "Kannst du mir helfen, neue Musiker*innen zu finden, um die Band wiederzubeleben?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Excellent! There’s a great guitar player who delivers food on his bike. Can you find him?"
+                    de: "Ausgezeichnet! Es gibt einen tollen Gitarristen, der mit seinem Fahrrad Essen ausliefert. Kannst du ihn finden?"
+                  set: [ 'quest.band1.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Find a guitar player working on food delivery."
+          de: "Finde einen Gitarristen, der zur Zeit als Essenslieferant arbeitet."
+        dialogues:
+          artist:
+            - text:
+                en: "There’s a great guitar player who delivers food on his bike. Can you find him?"
+                de: "Es gibt einen tollen Gitarristen, der mit seinem Fahrrad Essen ausliefert. Kannst du ihn finden?"
+          bikeMessenger:
+            - type: sequence
+              items:
+                - text:
+                    en: "Yes, I play guitar!"
+                    de: "Ja, ich spiele Gitarre!"
+                - text:
+                    en: "But I haven’t played much lately because work doesn’t leave me too much free time."
+                    de: "In letzter Zeit habe ich leider nicht viel gespielt, weil die Arbeit mir kaum Zeit dazu lässt."
+                - text:
+                    en: "Oh, this is a paying gig? Then count me in!"
+                    de: "Oh, das ist ein bezahlter Auftritt? Dann bin ich dabei!"
+                  set: [ 'quest.band1.done', 'pnt.freedomSmall.band1', 'quest.band1.local' ]
+  band2:
+    npc: artist
+    mood: band
+    required: band1
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The new guitar player I hired is doing great with the band. New audiences are coming in."
+                de: "Der neue Gitarrist macht sich richtig gut in der Band. Unser Publikum wächst."
+            - text:
+                en: "I still have the budget, from the money the city gave us,  to get additional members."
+                de: "Ich kann mit der Förderung der Stadt noch weitere Mitglieder anwerben."
+            - text:
+                en: "Can you help me find more musicians to revitalize the band?"
+                de: "Kannst du mir helfen, weitere Musiker*innen zu finden, um die Band wiederzubeleben?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Excellent! There’s an awesome drummer who cleans office windows. Can you find her?"
+                    de: "Ausgezeichnet! Es gibt eine großartige Schlagzeugerin, die gerade Bürofenster putzt. Kannst du sie finden?"
+                  set: [ 'quest.band2.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Find a drummer working as a window cleaner."
+          de: "Finde eine Schlagzeugerin, die als Fensterputzerin arbeitet."
+        dialogues:
+            artist:
+                - text:
+                    en: "There’s an awesome drummer who cleans office windows. Can you find her?"
+                    de: "Es gibt eine großartige Schlagzeugerin, die gerade Bürofenster putzt. Kannst du sie finden?"
+            windowCleaner:
+                - type: sequence
+                  items:
+                    - text:
+                        en: "Yes, I play the drums!"
+                        de: "Ja, ich spiele Schlagzeug!"
+                    - text:
+                        en: "Although my apartment is too small to fit my drumkit, so it’s still in boxes."
+                        de: "Allerdings ist meine Wohnung zu klein für mein Schlagzeug, daher ist es noch in Kisten verpackt."
+                    - text:
+                        en: "Oh, you have a space for rehearsing? I’m in!"
+                        de: "Oh, es gibt einen Raum zum Proben? Ich bin dabei!"
+                      set: [ 'quest.band2.done', 'pnt.freedomSmall.band2', 'quest.band2.local' ]
+  band3:
+    npc: artist
+    mood: band
+    required: band2
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The new band members have really revitalized the band. The audience seems to love their sound."
+                de: "Die neuen Bandmitglieder haben die Band wirklich wiederbelebt. Das Publikum liebt ihren Sound."
+            - text:
+                en: "I still have the budget, from the money the city gave us,  to put the cherry on top of the cake…"
+                de: "Von der Förderung der Stadt habe ich noch genügend Mittel übrig, um dem ganzen das Sahnehäubchen aufzusetzen…"
+            - text:
+                en: "Can you help me find a singer to complete the band?"
+                de: "Kannst Du mir helfen, eine Sängerin zu finden, die die Band vervollständigt?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  then: accepted
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+        - id: accepted
+          type: sequence
+          items:
+            - text:
+                en: "Excellent! I called a car with an app yesterday…"
+                de: "Ausgezeichnet! Ich habe gestern einen Fahrdienst mit einer App gerufen …"
+            - text:
+                en: "… the driver was singing before I got into the car. She had the most beautiful voice!"
+                de: "… die Fahrerin hat gesungen, bevor ich ins Auto einstieg. Sie hatte eine wunderschöne Stimme!"
+            - text:
+                en: "Can you find her?"
+                de: "Kannst du sie finden?"
+              set: [ 'quest.band3.active' ]
+    stages:
+      - prompt:
+          en: "Find a singer working as a driver."
+          de: "Finde die Sängerin, die als Fahrerin arbeitet."
+        dialogues:
+          artist:
+            - text:
+                en: "Can you find the singer working as a driver?"
+                de: "Kannst du die Sängerin finden, die als Fahrerin arbeitet?"
+          driver:
+            - type: sequence
+              items:
+                - text:
+                    en: "It’s true, I love singing, but privately!"
+                    de: "Es stimmt, ich singe gerne, aber nur privat!"
+                - text:
+                    en: "I’m not nearly good enough to sing on stage!"
+                    de: "Ich bin nicht annähernd gut genug, um auf der Bühne zu singen!"
+                  responses:
+                    - text:
+                        en: "Every great artist experiences doubts."
+                        de: "Alle großen Künstler*innen haben Zweifel."
+                      then: success
+                    - text:
+                        en: "You won’t be alone. The band will carry you."
+                        de: "Du wirst nicht allein sein. Die Band wird dich unterstützen."
+                      then: success
+                    - text:
+                        en: "The audience is on your side. They want to see your joy."
+                        de: "Das Publikum ist auf deiner Seite. Es will deine Freude sehen."
+                      then: success
+            - id: success
+              type: sequence
+              items:
+                - text:
+                    en: "Do you really think so?"
+                    de: "Glaubst du das wirklich?"
+                - text:
+                    en: "OK. OK. I should try it at least once."
+                    de: "Na gut. Ich denke, ich sollte es wenigstens einmal versuchen."
+                  set: [ 'quest.band3.done', 'pnt.freedomLarge.band3' ]
+  store1:
+    npc: mayor
+    mood: store
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "We’re investing in reactivating the shopping center."
+                de: "Wir investieren in die Wiederbelebung des Einkaufszentrums."
+            - text:
+                en: "We want people to return to the stores, and including everyone is important."
+                de: "Wir wollen, dass die Leute in die Läden zurückkehren, und es ist wichtig, dass alle mitmachen."
+            - text:
+                en: "Can you help me survey some citizens?"
+                de: "Kannst du mir helfen, eine Befragung unter den Bürger*innen durchzuführen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  then: accepted
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+        - id: accepted
+          type: sequence
+          items:
+            - text:
+                en: "Thank you. I know there’s been complaints from people in wheelchairs."
+                de: "Vielen Dank. Ich habe gehört, dass es Beschwerden von Menschen im Rollstuhl gibt."
+            - text:
+                en: "Please find a citizen in a wheelchair and find out more."
+                de: "Bitte finde eine Person im Rollstuhl und finde mehr heraus."
+              set: [ 'quest.store1.active' ]
+    stages:
+      - prompt:
+          en: "Talk to a citizen in a wheelchair about accessibility issues in the shopping center."
+          de: "Sprich mit einer Person im Rollstuhl über die Barrierefreiheit im Einkaufszentrum."
+        dialogues:
+          mayor:
+            - text:
+                en: "Please find a citizen in a wheelchair and find out more."
+                de: "Bitte finde eine Person im Rollstuhl und finde mehr heraus."
+          artist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Oh, yes, the shopping center has always been a problem for me!"
+                    de: "Oh, ja, das Einkaufszentrum ist immer ein Problem für mich!"
+                - text:
+                    en: "The elevators work fine, and the bathrooms are accessible…"
+                    de: "Die Aufzüge funktionieren gut, und die Toiletten sind barrierefrei..."
+                - text:
+                    en: "… but there isn’t enough parking space for bicycles! Especially for my e-bike, which is a bit wider."
+                    de: "... aber es gibt nicht genug Parkplätze für Fahrräder! Vor allem für mein E-Bike, das etwas breiter ist."
+                - text:
+                    en: "Thanks for listening. I hope the city fixes this."
+                    de: "Danke fürs Zuhören, ich hoffe, die Stadt bringt das in Ordnung."
+                  set: [ 'quest.store1.done', 'pnt.freedomSmall.store1' ]
+  store2:
+    npc: mayor
+    mood: store
+    required: store1
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "We’re continuing our work to reactivate the shopping center."
+                de: "Wir arbeiten weiter daran, das Einkaufszentrum zu reaktivieren."
+            - text:
+                en: "We hope people choose to buy in local shops instead of online. And it’s important that everyone feels welcome."
+                de: "Wir hoffen, dass die Menschen lieber in Geschäften vor Ort einkaufen als online. Und es ist wichtig, dass sich jeder willkommen fühlt."
+            - text:
+                en: "Can you help me survey some citizens?"
+                de: "Kannst du mir helfen, einige Bürger*innen zu befragen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  then: accepted
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+        - id: accepted
+          type: sequence
+          items:
+            - text:
+                en: "Thank you. I know there’s been complaints from older citizens."
+                de: "Ich danke dir. Ich habe gehört, dass es Beschwerden von älteren Personen gibt."
+            - text:
+                en: "Please talk to someone who looks older (don’t ask their age, please)."
+                de: "Bitte sprich mit jemandem, der älter aussieht (frag bitte nicht nach dem Alter)."
+              set: [ 'quest.store2.active' ]
+    stages:
+      - prompt:
+          en: "Talk to an older citizen (maybe don’t say why you selected them)."
+          de: "Sprich mit einer älteren Person (sag vielleicht nicht, warum du sie ausgewählt hast)."
+        dialogues:
+          mayor:
+            - text:
+                en: "Please talk to someone who looks older (don’t ask their age, please)."
+                de: "Bitte sprich mit jemandem, der älter aussieht (frag bitte nicht nach dem Alter)."
+          _ageOld:
+            - type: sequence
+              items:
+                - text:
+                    en: "The shopping center doesn’t have enough benches to sit on."
+                    de: "Im Einkaufszentrum gibt es nicht genug Bänke zum Sitzen."
+                - text:
+                    en: "They want people buying and moving along!"
+                    de: "Sie wollen, dass die Leute einkaufen und weitergehen!"
+                - text:
+                    en: "My back and legs are fine, but I’m retired and have more free time, so I like to sit."
+                    de: "Meinem Rücken und meinen Beinen geht es gut, aber ich bin im Ruhestand und habe mehr Freizeit, deshalb sitze ich gerne hier."
+                - text:
+                    en: "Thanks for asking. I hope they install some comfortable benches."
+                    de: "Danke für die Nachfrage. Ich hoffe, dass sie ein paar bequeme Bänke aufstellen."
+                  set: [ 'quest.store2.done', 'pnt.freedomSmall.store2' ]
+          _ageNotOld:
+            - type: random
+              items:
+                - text:
+                    en: "What age do you think I am?!"
+                    de: "Für wie alt hältst du mich?!"
+                - text:
+                    en: "What do you mean by “older citizens”?"
+                    de: "Was meinst du mit „älteren Personen”?"
+          _ageYoung:
+            - text:
+                en: "But... I’m younger than you!"
+                de: "Aber... Ich bin jünger als du!"
+  store3:
+    npc: mayor
+    mood: store
+    required: store2
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "The city is hard at work reactivating the shopping center."
+                de: "Die Stadt arbeitet daran, das Einkaufszentrum wieder zu beleben."
+            - text:
+                en: "We need everyone to feel welcome to make it a lively urban hub."
+                de: "Alle sollen sich willkommen fühlen, damit es zu einem lebendigen Stadtteilzentrum wird."
+            - text:
+                en: "Can you help me survey some citizens?"
+                de: "Kannst du mir helfen, einige Bürger*innen zu befragen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  then: accepted
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+        - id: accepted
+          type: sequence
+          items:
+            - text:
+                en: "Thank you. I know there’s been complaints from parents of small kids."
+                de: "Vielen Dank. Ich habe gehört, dass es Beschwerden von Eltern kleiner Kinder gibt."
+            - text:
+                en: "Please find a parent and find out more."
+                de: "Bitte finde ein Elternteil und erfahre mehr."
+              set: [ 'quest.store3.active' ]
+    stages:
+      - prompt:
+          en: "Talk to a parent with a small kid or baby."
+          de: "Sprich mit einem Elternteil von einem kleinen Kind oder Baby."
+        dialogues:
+            mayor:
+                - text:
+                    en: "Please find a parent and find out more."
+                    de: "Bitte finde ein Elternteil und erfahre mehr."
+            footballFan:
+                - type: sequence
+                  items:
+                    - text:
+                        en: "The shopping center should offer activities for families, like cultural activities."
+                        de: "Das Einkaufszentrum sollte Aktivitäten für Familien anbieten. Zum Beispiel ein Kulturprogramm."
+                    - text:
+                        en: "When the weather is bad, it’s a good place to spend some time away from home…"
+                        de: "Bei schlechtem Wetter ist es ein guter Ort, um eine Weile von zu Hause weg zu sein..."
+                    - text:
+                        en: "… but right now, it’s designed for spending money and leaving quickly."
+                        de: "... aber im Moment ist es nur darauf ausgelegt, schnell Geld auszugeben und wieder zu gehen."
+                    - text:
+                        en: "Thanks for consulting us. I hope the city transforms it into something different."
+                        de: "Danke, dass du uns befragt hast. Ich hoffe, die Stadt gestaltet es zu einem besseren Ort um."
+                      set: [ 'quest.store3.done', 'pnt.freedomLarge.store3' ]
+  mardiF:
+    npc: mathFan
+    mood: mardi
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I need to prepare a presentation on my favorite scientist, Professor Fry."
+                de: "Ich muss ein Referat über meine Lieblingswissenschaftlerin vorbereiten: Professorin Fry."
+            - text:
+                en: "I can’t find her early work, and all search results are mixed with another author by the same name. I am completely lost!"
+                de: "Ich finde nichts zu ihren frühen Werken und die Suchergebnisse sind mit einer anderen Autorin vermischt, die genauso heißt. Ich komme gar nicht weiter!"
+            - text:
+                en: "Can you help me find more information for my presentation?"
+                de: "Kannst du mir helfen, mehr Informationen für mein Referat zu finden?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Find out more about Professor Fry’s work."
+                    de: "Finde mehr über das Werk von Professorin Fry heraus."
+                  set: [ 'quest.mardiF.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Find a source of information on Professor Fry’s work."
+          de: "Finde Infos über die Arbeit von Professorin Fry."
+        dialogues:
+          mathFan:
+            - text:
+                en: "Go around and ask others for help."
+                de: "Laufe umher und bitte andere um Hilfe."
+          librarian:
+            - type: sequence
+              items:
+                - text:
+                    en: "I will try to find Professor Fry’s first book via the ISBN, a unique number to identify it."
+                    de: "Ich suche das Buch von Professorin Fry über die ISBN, eine eindeutige Nummer zur Identifizierung."
+                - text:
+                    en: ":clock: 1 minute later…"
+                    de: ":clock: 1 Minute später..."
+                - text:
+                    en: "The book was findable, here it is. Please return it later."
+                    de: "Das Buch war auffindbar, hier ist es. Bitte gib es später zurück."
+                  set: [ 'quest.mardiF.done', 'pnt.freedomSmall.mardiF' ]
+          videoBlogger:
+            - type: sequence
+              items:
+                - text:
+                    en: "Oh, I love it when Hannah Fry explains math things in videos!"
+                    de: "Oh, ich liebe es, wenn Hannah Fry coole Mathesachen in ihren Videos erklärt!"
+                - text:
+                    en: "Here are some links to the videos I like the most."
+                    de: "Hier sind ein paar Links zu den Videos, die ich am besten finde."
+                - text:
+                    en: "With this the videos are findable."
+                    de: "Damit sind die Videos auffindbar."
+                  set: [ 'quest.mardiF.done', 'pnt.freedomSmall.mardiF' ]
+          journalist:
+            - type: sequence
+              items:
+                - text:
+                    en: "Professor Fry has presented several television programs and appeared in radio shows. I will search the media archive for you."
+                    de: "Professorin Fry ist einige Male im Fernsehen und in Radiosendungen aufgetreten. Ich werde das Medienarchiv für dich durchsuchen."
+                - text:
+                    en: ":clock: 5 minutes later…"
+                    de: ":clock: 5 Minuten später…"
+                - text:
+                    en: "Here is a list of her appearances. With this list, they are findable online."
+                    de: "Hier ist eine Liste ihrer Auftritte. Damit sind die Sendungen jetzt online auffindbar."
+                  set: [ 'quest.mardiF.done', 'pnt.freedomSmall.mardiF' ]
+          mardiMathematician:
+            - type: sequence
+              items:
+                - text:
+                    en: "I have met Professor Fry at a conference."
+                    de: "Ich habe Professorin Fry auf einer Konferenz getroffen."
+                - text:
+                    en: "Her articles are findable in a scientific online library using her author identifier number."
+                    de: "Ihre Artikel sind über ihre individuelle Personen-Kennnummer in einer wissenschaftlichen Online-Bibliothek auffindbar."
+                - text:
+                    en: "I have access and can download them as PDFs for you."
+                    de: "Ich habe Zugang dazu und kann sie dir als PDF-Dateien herunterladen."
+                  set: [ 'quest.mardiF.done', 'pnt.freedomSmall.mardiF' ]
+          biologist:
+            - type: sequence
+              items:
+                - text:
+                    en: "I don’t know Professor Fry. However, I am interested in learning more about her work."
+                    de: "Ich kenne Professorin Fry nicht. Aber ich bin daran interessiert, mehr über ihre Arbeit zu erfahren."
+                - text:
+                    en: "I hope Libby’s presentation will be available to others and easy to find."
+                    de: "Ich hoffe, Libbys Referat wird dann für andere zugänglich und leicht zu finden sein."
+          _default:
+#            type: shuffle
+            - type: first
+              items:
+                - text:
+                    en: "Sorry, I cannot help you with that."
+                    de: "Tut mir leid, da kann ich dir nicht helfen."
+                - text:
+                    en: "If she is a mathematician, go to the ship that has just docked in the city harbor and ask there."
+                    de: "Wenn sie Mathematikerin ist, frag beim Schiff, das gerade im Stadthafen angelegt hat."
+                - text:
+                    en: "My uncle has a book by Professor Fry. The library might have it."
+                    de: "Mein Onkel hat ein Buch von Professorin Fry. Vielleicht kannst du es in der Bibliothek ausleihen."
+                - text:
+                    en: "I know she has a radio show. Ask the journalist about her."
+                    de: "Ich weiß, dass sie eine Radiosendung hat. Frag mal den Journalisten danach."
+                - text:
+                    en: "Sorry, I cannot help you with that."
+                    de: "Tut mir leid, da kann ich dir nicht helfen."
+                - text:
+                    en: "I know it can be tricky to find the information you are looking for."
+                    de: "Ich weiß, es kann schwierig sein, die Informationen zu finden, die du brauchst."
+                - text:
+                    en: "Have you heard of the data consultant? She might have some general advice for you."
+                    de: "Hast du schon von der Datenberaterin gehört? Sie hat bestimmt ein paar gute allgemeine Ratschläge für dich."
+                - text:
+                    en: "I have seen a cool video she produced. Ask the videoblogger about it."
+                    de: "Ich habe ein cooles Video gesehen, das sie produziert hat. Frag mal den Videoblogger danach."
+                - text:
+                    en: "I have never heard of Professor Fry, sorry."
+                    de: "Von Professorin Fry habe ich noch nie gehört, tut mir leid."
+  mardiA:
+    npc: gameDev
+    mood: mardi
+    required: mardiF
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I developed a computer game with my dog Emmy as the main character."
+                de: "Ich habe ein Computerspiel entwickelt und mein Hund Emmy ist die Hauptfigur darin."
+            - text:
+                en: "My friends want to play it, but I have no idea how to make it freely downloadable for everybody."
+                de: "Meine Freunde wollen es spielen, aber ich habe keine Ahnung, wie ich es für sie zugänglich machen kann."
+            - text:
+                en: "Can you help me to find out?"
+                de: "Kannst du mir helfen, das herauszufinden?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Get information about sharing computer games."
+                    de: "Suche Informationen, wie man Computerspiele anderen zugänglich macht."
+                  set: [ 'quest.mardiA.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Talk to someone at the ship in the city harbor about sharing computer games."
+          de: "Sprich mit jemandem auf dem Schiff im Stadthafen, wie man Computerspiele anderen zugänglich macht."
+        dialogues:
+          gameDev:
+            - text:
+                en: "Thank you for helping me. Did you ask the mathematician yet?"
+                de: "Danke, dass du mir helfen willst. Hast du schon den Mathematiker gefragt?"
+          mardiMathematician:
+            - type: sequence
+              items:
+                - text:
+                    en: "Your friend can make the game accessible online and upload the source code to an open platform. "
+                    de: "Dein Freund kann das Spiel online zugänglich machen und den Quellcode auf eine offene Plattform laden."
+                - text:
+                    en: "Make sure you define who can download it and who can collaborate."
+                    de: "Lege unbedingt fest, wer das Spiel herunterladen und wer es weiterentwickeln darf."
+                  set: [ 'quest.mardiA.done', 'pnt.freedomSmall.mardiA' ]
+          journalist:
+            - text:
+                en: "I know about publishing text and media. For computer games or software, you can ask the mathematician. He will be happy to help you."
+                de: "Ich kenne mich mit der Veröffentlichung von Texten und Medien aus. Zu Computerspielen oder Software kannst du den Mathematiker fragen. Er hilft dir bestimmt gern."
+          videoBlogger:
+            - text:
+                en: "To make games or data accessible, contact the mathematician."
+                de: "Wenn du Spiele oder Daten zugänglich machen möchtest, wende dich an den Mathematiker."
+          _default:
+            - type: first
+#              type: shuffle
+              items:
+                - text:
+                    en: "I don’t know anything about sharing computer games."
+                    de: "Keine Ahnung, wie man Computerspiele anderen zugänglich macht."
+                - text:
+                    en: "The best person to ask for help is the mathematician."
+                    de: "Am besten fragst du den Mathematiker."
+                - text:
+                    en: "Have you heard of the data consultant? She might have some general advice for you."
+                    de: "Hast du schon von der Datenberaterin gehört? Sie hat bestimmt ein paar gute allgemeine Ratschläge für dich."
+                - text:
+                    en: "I love computergames!"
+                    de: "Ich liebe Computerspiele."
+                - text:
+                    en: "Computer games promote violence!"
+                    de: "Computerspiele fördern Gewalttaten!"
+  mardiI:
+    npc: journalist
+    mood: mardi
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "I received a document from a whistleblower. I need the information for my current investigations."
+                de: "Ich habe ein Dokument von einem Whistleblower erhalten. Ich brauche die Infos daraus für meine laufende Recherche."
+            - text:
+                en: "I am stuck since my text editor cannot open the file format!"
+                de: "Ich stecke fest, da mein Texteditor das Dateiformat nicht öffnen kann!"
+            - text:
+                en: "Can you help me find a solution?"
+                de: "Kannst du mir helfen, eine Lösung zu finden?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an"
+                  thenText:
+                    en: "Find a way to open the document."
+                    de: "Finde einen Weg, das Dokument zu öffnen."
+                  set: [ 'quest.mardiI.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen"
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Find an expert in file formats to open the document."
+          de: "Finde eine Fachperson für Dateiformate, um das Dokument zu öffnen."
+        dialogues:
+          mardiMathematician:
+            - type: sequence
+              items:
+                - text:
+                    en: "We can run a statistical analysis to identify the file format."
+                    de: "Wir können eine statistische Analyse durchführen, um das Dateiformat zu identifizieren."
+                - text:
+                    en: ":clock: 3 minutes later…"
+                    de: ":clock: 3 Minuten später..."
+                - text:
+                    en: "It is an old proprietary text format. Here is a program to convert it to a standard text format for you. Now it is interoperable."
+                    de: "Es ist ein altes geschütztes Textformat. Hier ist ein Programm, das es für dich in ein Standard-Textformat umwandelt, und somit verknüpfbar macht."
+                  set: [ 'quest.mardiI.done', 'pnt.freedomSmall.mardiI' ]
+          biologist:
+            - text:
+                en: "You can ask the people on the ship that has just docked in the city harbor. They work on all forms and formats of data."
+                de: "Du kannst die Leute auf dem Schiff fragen, das gerade im Stadthafen angelegt hat. Sie arbeiten mit allen Formen und Formaten von Daten."
+          videoBlogger:
+            - text:
+                en: "I have seen many file formats for media. But this one is not in a video format."
+                de: "Ich habe schon viele Multimedia-Dateiformate gesehen. Aber das hier ist kein Videoformat."
+          librarian:
+            - type: sequence
+              items:
+                - text:
+                    en: "We don’t have a book on old file formats.."
+                    de: "Wir haben kein Buch über alte Dateiformate."
+                - text:
+                    en: "The mathematicians at the ship are experts in data formats and interoperbility; you can ask them."
+                    de: "Der Mathematiker auf dem Schiff ist ein Experte für Dateiformate und Verknüpfbarkeit, frag ihn doch mal."
+          _default:
+            - type: first
+#              type: shuffle
+              items:
+                - text:
+                    en: "Sorry, I cannot help you."
+                    de: "Tut mir leid, ich kann dir nicht helfen."
+                - text:
+                    en: "The best person to ask for help is the mathematician."
+                    de: "Am besten fragst du den Mathematiker."
+                - text:
+                    en: "I want an AI assistant to deal with things like that."
+                    de: "Ich möchte einen KI-Assistenten, der sich um solche Dinge kümmert."
+  mardiR:
+    npc: mardiMathematician
+    mood: mardi
+    required: [ mardiF, mardiA, mardiI ]
+    available:
+      dialogue:
+        - type: sequence
+          items:
+            - text:
+                en: "With our tool you can upload a photo of a petrified dinosaur footprint and get an analysis."
+                de: "Mit unserer neuen Software kannst du ein Foto eines versteinerten Dinosaurier-Fußabdrucks hochladen und analysieren lassen."
+            - text:
+                en: "We got pictures from the university, but the locations and dimensions are missing.  Without them, we can’t reuse the pictures."
+                de: "Wir haben Bilder von der Universität bekommen, aber da fehlt überall der Standort und die Abmessungen. Ohne diese Information können wir die Bilder nicht wiederverwenden."
+            - text:
+                en: "We are stuck. Can you help me get the missing data from the university?"
+                de: "Wir stecken fest. Kannst du uns helfen, die fehlenden Daten von der Universität zu bekommen?"
+              responses:
+                - text:
+                    en: "Accept the quest"
+                    de: "Nimm die Aufgabe an."
+                  thenText:
+                    en: "Talk to the scientist at the university."
+                    de: "Sprich mit der Wissenschaftlerin an der Universität."
+                  set: [ 'quest.mardiR.active' ]
+                - text:
+                    en: "Decline for now"
+                    de: "Vorerst ablehnen."
+                  thenText:
+                    en: "OK. I hope you reconsider."
+                    de: "Ok. Ich hoffe, du überlegst es dir nochmal."
+    stages:
+      - prompt:
+          en: "Talk to the biologist at the university."
+          de: "Sprich mit der Biologin an der Universität."
+        target: biologist
+        dialogues:
+          mardiMathematician:
+            - text:
+                en: "Thank you for helping  me. You should go and talk to someone at the university."
+                de: "Danke, dass du mir hellfen willst. Am besten fragst du jemanden an der Universität."
+          biologist:
+            - type: sequence
+              items:
+                - text:
+                    en: "We were not aware that including the locations and dimensions is essential."
+                    de: "Uns war nicht bewusst, dass die Standortangaben und Abmessungen wesentlich sind."
+                - text:
+                    en: "I understand now that you need more than just the pictures for free reuse."
+                    de: "Ich verstehe jetzt, dass man für eine freie Wiederverwendung mehr braucht als nur die Bilder."
+                - text:
+                    en: ":clock: …30 minutes later"
+                    de: ":clock: …30 Minuten später"
+                - text:
+                    en: "We have now uploaded a new version of the dataset with everything included. That way the data is reusable."
+                    de: "Wir haben jetzt eine neue Version des Datensatzes hochgeladen, in der alles enthalten ist. So sind die Daten wiederverwendbar."
+                  set: [ 'quest.mardiR.done', 'pnt.freedomLarge.mardiR' ]
+ending:
+  dialogue:
+    - cond: 'COUNT("pnt.") >= 16'
+      text:
+        en: "A perfect job! Thanks to your help, citizens are now making decisions about their future together, ensuring everyone is included. Their outlook on the future couldn’t be better."
+        de: "Perfekte Arbeit! Dank Deiner Hilfe treffen die Bürger*innen jetzt gemeinsam Entscheidungen über ihre Zukunft und stellen sicher, dass alle einbezogen werden. Die Aussicht auf ihre Zukunft könnte nicht besser sein."
+    - cond: 'COUNT("pnt.") >= 12'
+      text:
+        en: "Great job! Thanks to your help, citizens feel confident and included in their community’s future. There are still some challenges to their Freedom, but everything can be achieved by working together."
+        de: "Tolle Arbeit! Dank Deiner Hilfe fühlen sich die Bürger*innen zuversichtlich und in die Zukunft ihrer Gemeinschaft eingebunden. Es gibt immer noch einige Herausforderungen für ihre Freiheit, aber alles kann erreicht werden, indem alle zusammenarbeiten."
+    - cond: 'COUNT("pnt.") >= 9'
+      text:
+        en: "Good job! You made a difference! Citizens are embracing their role in ensuring everyone’s Freedom. New challenges still emerge, and you can keep working together for a better future."
+        de: "Gute Arbeit! Du hast einen Unterschied gemacht! Die Bürger*innen erkennen ihre Verantwortung und setzen sich für die Freiheit aller ein. Neue Herausforderungen tauchen immer noch auf, und du kannst dich noch weiter für eine bessere Zukunft einsetzen."
+    - cond: 'COUNT("pnt.") >= 6'
+      text:
+        en: "Thanks to your efforts, many citizens feel more hopeful and empowered to take charge of their future. Big challenges to this community’s Freedom still lie ahead, but with your help, they can also be tamed."
+        de: "Dank deiner Bemühungen fühlen sich viele Bürger*innen voll Hoffnung und ermächtigt, ihre Zukunft selbst in die Hand zu nehmen. Es gibt noch große Herausforderungen für die Freiheit, aber mit deiner Hilfe können auch sie gemeistert werden."
+    - cond: 'COUNT("pnt.") >= 3'
+      text:
+        en: "You’ve taken the first step towards improving these citizens’ Freedom. Although the challenges are still many, and the path ahead is still uncertain, your actions have given everyone hope. Continue the effort, and the future will surely be bright."
+        de: "Du hast den ersten Schritt getan, um die Freiheit der Bürger*innen zu verbessern. Obwohl die Herausforderungen noch zahlreich sind und der Weg nach vorn ungewiss ist, haben deine Aktionen allen Hoffnung gegeben. Mache weiter so und die Zukunft wird besser werden."
+    - cond: 'COUNT("pnt.") >= 1'
+      text:
+        en: "Citizens don’t feel positively about the future. Social, technological, and political challenges to their Freedom seem almost impossible to overcome. But you helped make a small difference, and there’s always another chance to improve things…"
+        de: "Die Bürger*innen haben kein gutes Gefühl zu ihrer Zukunft. Soziale, technologische und politische Herausforderungen für ihre Freiheit scheinen fast unüberwindbar. Aber du hast einen kleinen Unterschied gemacht. Und, es gibt immer eine weitere Chance, die Dinge zu verbessern…"
+    - text:
+        en: "Citizens are very worried about the future. Social, technological, and political challenges to their Freedom seem impossible to overcome. But there’s always another chance to improve things…"
+        de: "Die Bürger*innen machen sich große Sorgen um die Zukunft. Soziale, technologische und politische Herausforderungen für ihre Freiheit scheinen unüberwindbar. Aber es gibt immer eine weitere Chance, die Dinge zu verbessern…"
+
+
