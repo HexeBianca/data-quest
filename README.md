@@ -1,6 +1,6 @@
-# Citizen Quest: Freiheit
+# Data Quest
 
-A game about Freedom.
+A MaRDI game based on the Citizen Quest game engine. 
 
 Based on the interactive exhibit [Citizen Quest](https://github.com/IMAGINARY/citizen-quest),
 developed by [Imaginary](https://about.imaginary.org/) for [Futurium](https://futurium.de/de/citizen-quest).
