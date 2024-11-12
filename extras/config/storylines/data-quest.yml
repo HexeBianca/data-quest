@@ -273,7 +273,7 @@ npcs:
       en: Mike Backmill
       de: Mike Backmill
     type: citizenDough
-    spawn: { x: 3160, y: 1200 }
+    spawn: { x: 2491, y: 1365 }
     cond: 'quest.credit1.done'
     dialogue:
       - type: sequence
@@ -288,7 +288,7 @@ npcs:
     name:
       en: "Emmy"
     type: dogTan
-    spawn: { x: 3260, y: 1150 }
+    spawn: { x: 2568, y: 1365 }
     cond: 'quest.credit1.done'
     dialogue:
       - text:
@@ -335,7 +335,7 @@ npcs:
       en: "Jane Allgood"
       de: "Jane Allgood"
     type: citizenTennis
-    spawn: { x: 3260, y: 1300 }
+    spawn: { x: 2709, y: 1397 }
     cond: 'quest.credit2.done'
     dialogue:
       - type: sequence
@@ -395,7 +395,7 @@ npcs:
       en: "Franciszek Snowpinski"
       de: "Franciszek Snowpinski"
     type: citizenChamp
-    spawn: { x: 3410, y: 1220 }
+    spawn: { x: 2818, y: 1350 }
     cond: 'quest.credit3.done'
     dialogue:
       - type: sequence
