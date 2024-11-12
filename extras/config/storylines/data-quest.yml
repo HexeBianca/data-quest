@@ -46,7 +46,7 @@ npcs:
     name:
       en: Flora Notte
       de: Flora Notte
-    spawn: { x: 3460, y: 1100 }
+    spawn: { x: 2967, y: 1187 }
     dialogue:
       - cond: 'quest.credit1.done & ^quest.credit2.done & ^quest.credit3.done'
         type: sequence
@@ -95,7 +95,7 @@ npcs:
       en: Maxi Plunk
       de: Maxi Plunk
     type: citizenWheelchair
-    spawn: { x: 3340, y: 1300 }
+    spawn: { x: 3011, y: 1366 }
     dialogue:
       - cond: 'quest.credit1.done & ^quest.credit2.done & ^quest.credit3.done'
         type: sequence
@@ -273,7 +273,7 @@ npcs:
       en: Mike Backmill
       de: Mike Backmill
     type: citizenDough
-    spawn: { x: 2491, y: 1365 }
+    spawn: { x: 2832, y: 1430 }
     cond: 'quest.credit1.done'
     dialogue:
       - type: sequence
@@ -288,7 +288,7 @@ npcs:
     name:
       en: "Emmy"
     type: dogTan
-    spawn: { x: 2568, y: 1365 }
+    spawn: { x: 2906, y: 1350 }
     cond: 'quest.credit1.done'
     dialogue:
       - text:
@@ -395,7 +395,7 @@ npcs:
       en: "Franciszek Snowpinski"
       de: "Franciszek Snowpinski"
     type: citizenChamp
-    spawn: { x: 2818, y: 1350 }
+    spawn: { x: 2568, y: 1365 }
     cond: 'quest.credit3.done'
     dialogue:
       - type: sequence
