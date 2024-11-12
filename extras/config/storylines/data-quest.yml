@@ -175,7 +175,7 @@ npcs:
     name:
       en: Help Desk
       de: Help Desk
-    spawn: { x: 5791, y: 3055 }
+    spawn: { x: 5567, y: 2833 }
     type: citizenBraid
     dialogue:
       - type: sequence
@@ -462,6 +462,11 @@ npcs:
 scenery:
   sculpture:
     spawn: { x: 2703, y: 1322 }
+  helpbooth:
+    spawn: { x: 5608, y: 2882 }
+    zIndex: 2834
+  helpboothback:
+    spawn: { x: 5560, y: 2821 }
   ringlight:
     spawn: { x: 2094, y: 1305 }
   camera:
