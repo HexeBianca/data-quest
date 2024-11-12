@@ -111,6 +111,9 @@ storylines:
   - data-quest
 i18n:
   ui:
+    title:
+      en: 'Data Quest'
+      de: 'Data Quest'
     defaultPrompt:
       en: 'Talk to people with a :speech_bubble: to get quests.'
       de: 'Sprich mit Leuten mit einer :speech_bubble:, um Aufgaben zu erhalten.'

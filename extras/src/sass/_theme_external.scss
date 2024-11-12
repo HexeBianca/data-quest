@@ -57,6 +57,14 @@ $c-edsoc-yellow: #ffeb78;
   }
 }
 
+.title-overlay {
+  .logo {
+    background-image: url('../../static/logo/data-quest-logo.svg');
+    background-size: 70%;
+    background-position: center 28%;
+  }
+}
+
 .intro-screen {
   background-color: $c-edsoc-yellow;
 
