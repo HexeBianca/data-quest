@@ -46,7 +46,7 @@ npcs:
     name:
       en: Flora Notte
       de: Flora Notte
-    spawn: { x: 2967, y: 1187 }
+    spawn: { x: 3167, y: 1287 }
     dialogue:
       - cond: 'quest.credit1.done & ^quest.credit2.done & ^quest.credit3.done'
         type: sequence
@@ -85,7 +85,7 @@ npcs:
     name:
       en: Dusty Grant
       de: Dusty Grant
-    spawn: { x: 2158, y: 1255 }
+    spawn: { x: 2158, y: 1305 }
     dialogue:
       - text:
           en: "We sailed for a while with MaRDI's math and data pioneers! Check out the Data Date video interviews in the MaRDI newsletter!"
@@ -468,15 +468,15 @@ scenery:
   helpboothback:
     spawn: { x: 5560, y: 2821 }
   ringlight:
-    spawn: { x: 2094, y: 1305 }
+    spawn: { x: 2094, y: 1355 }
   camera:
-    spawn: { x: 2235, y: 1313 }
+    spawn: { x: 2235, y: 1363 }
   tree1:
     spawn: { x: 2880, y: 1829 }
   tree2:
     spawn: { x: 3085, y: 1913 }
   tree3:
-    spawn: { x: 3617, y: 1464 }
+    spawn: { x: 3817, y: 1464 }
   tree4:
     spawn: { x: 4959, y: 2187 }
   tree5:
